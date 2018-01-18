@@ -237,6 +237,44 @@
                         </table>
                     </section>
                     <section>
+                        <h2>Profile Management</h2>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>wshow</b></td>
+                                    <td>Displays your existing and current profiles.</b></td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig profile new {profile_name}</b></td>
+                                    <td>Add a new profile. Fails if the profile name already exists.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig profile delete {profile_name}</b></td>
+                                    <td>Deletes a profile.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig profile copy {source_profile} {dest_profile}</b></td>
+                                    <td>Copy the settings from one profile into another</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig profile copyclass {source_class}</b></td>
+                                    <td>Copy the settings from one class to your current class.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>swp {profile_name}</b></td>
+                                    <td>Switch profiles.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>defup {profile_name}</b></td>
+                                    <td>Switch profiles and raise defup defences.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td colspan="2">Typically, you'll want to create a new profile. Configure your keepup/defup defences (wshow keepup/defup). Then move your priorities around in wshow defprio.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
                         <h2>Do, Dofree and Dorepeat Aliases</h2>
                         <table class="list">
                             <tbody>
