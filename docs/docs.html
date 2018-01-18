@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>WunderSys</title>
+        <meta name="description" content="WunderSys Achaean System for Mudlet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAASwSURBVHja7FhtSJtXFH6SGufUaeaoCOp0q4pu0kZFKwpDG4ZGK5WBlE1hrEzbH6HS/vADxK1bqUzsVqSDlaGUFTb80f2RMS1Rh43WyrR+ZBNlBZHGkmn8mEYRNWfn/chnU+vAsQy88OTe99zz3vvcc557ElUA+IPxKv77tqzgj78Yr/gBmTUlf2zDP9q2En7UDskckvmnLeAgFjnCRzqTAZxOA343A7f7gcW1f4GM4KB4wf2/dhaoOe16LjsJ6JqBpfUDSFMg40PGPbk8P2YMM+oYkV6+RRpPIkLLOgY0v38Akcli/MB408sey8hk1DMuMdpl+9kc3wtr3+aIckiJ3IwKuad9kNEyOhkv78E+jNEm9zcYq8/J39aOG5Ek+ZQRMqEVxq+M356TJuHL6ZsXEHFvLQwNv33rJ2DHx0m/H5QH7zA+YCTIZISv5DcEYTF0Psi8xvhY9t/3DWJ8bufDzbO+binxxKqEXYgGR+rbXgU++5Ed4mUyO/IN2PJKEQsd6YwgNzJ5jPfcdyopAXp7gTt3OFRusaqqYlXfk1BQgHw2qVkY3aYwPE68jaXc+yhpT0JVG+H1+Dh88VULHpx/gDH9GIznjbiquwp1oBrY9RLpW65H65fMd0lKsQStlpzt+HGXfXDQZW9tFW3HVCoqLi4WTSsrKxQcHEwpKSni2Fd79PQRhV8LJzRyjD5l1DOKxXhZlQ5RemhlaAhYWJDGyclSHx7uGotq10rpCghAXl6eOB4fH8fGxgYaGxvZPRyjT0eh/U6L5K+TUWuo5R0JmigNLmZfdBUupZxzR5rGGbPuZGw2YGJCGp84IfW5uSw+Vp/FAt5RJLZ79ChW7XZ2kXz6+vrEPi4uTuwHnwyid6wX07PTaO5qxs3hm3hofogdQVyOqyNU6kU3MvcZA94K7enxiABOnZL6jg6gn+u9Uomp9HSs7O4yr2QPMgaDQez1mXoYLxlRU1CDtKQ0XP75MrJvZKPplyZAJe8zxZh204yg8VTpIrj0odNJSV5YIAoNJTKZpOecHKKGBnHY1tJCSQkJTr2o1Woh9xQYGEhdXV3P6GXRtkh1hjpCA+frE8ZHjCOiXkjmIZER0OROJjaWaGtLWuXcOaKNDaL1daKwMKLMTNE8OTlJlZWV4nhkZMSxqBM6PlB7e7s4t7297SR1pecK4V32ecnD35OMgFZ3QsPD0tsTE1JvMIj2/shIspjNtLa2RkNDQ/LlahXfZ+FSfn4+FRUVUUhIiHPd+Ph46uzsFH3n5uYoQBXgTf5ZMgK4ytAoY/f6dY8wz1+4QNWyz927dz3mSktLRXtiYiLZ7XbRVlFR4bFueXm5aF9eXubMh+6PjAMVfEL3dpLrh2OutrbWabfZbBQVFeWc6+7uduqourqaCgsLSa/Xk9VqFe1Go9HXfnuTiY6Ops3NTXEBYSEhBY65jIwMJxlvvQgpmZ2d9Vn0LBYLpaam+iSz548rs9mMmpoaxMTEYGZmBqurq845k8mE+vp6REREYGDAszAwEWRlZaGsrAwajQZBQUHgQ2FqaoorQwfm5+d97qeQIxPhBz+Blw7/Ojgk878no/ITLiqhzvzpJ/+jWf5bgAEAhewJ7LNe5W4AAAAASUVORK5CYII='/>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper clearfix">
+		        <a href="index.html">
+		          <div class="heroLogo title">
+		            <i class="lCircle"></i>
+		            <i class="sCircle"></i>
+		            <i class="mCircle"></i>
+		            <h2>WunderSys</h2>
+		          </div>
+		        </a>
+                <nav>
+                    <ul>
+                        <li><a href="installation.html">Installation</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                        <li><a href="Changelog.html">ChangeLog</a></li>
+                        <li><a href="help.html">Help</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>Documentation.</h1>
+                        <p>All of the Aliases and Functions for WunderSys.</p>
+                    </header>
+                    <section>
+                        <h2>System Aliases</h2>
+                            <table class="list">
+                                <tbody>
+                                <tr class="list">
+                                    <td><b>pp</b></td>
+                                    <td>pause toggle</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>unp</b></td>
+                                    <td>unpause system</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>sp</b></td>
+                                    <td>softpause toggle</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wshow settings</b></td>
+                                    <td>Display the settings you can modify</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig {setting} {value}</b></td>
+                                    <td>Set a setting to a certain value</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsystem restore default</b></td>
+                                    <td>Restore default settings in the system. Be careful, these deletes all saved settings.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>whelp</b></td>
+                                    <td>Opens the Documentation page in your default browser.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wbug {bug details}</b></td>
+                                    <td>Sends me (Nemutaur) a message ingame with a bug you have found.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dv / diag</b></td>
+                                    <td>Diagnoses afflictions.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>df / def</b></td>
+                                    <td>Checks defences.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wshow defup</b></td>
+                                    <td>Set defup defences.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wshow keepup</b></td>
+                                    <td>Set keepup defences.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>bdef</b></td>
+                                    <td>Def up missing defences.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>reb {on|off}</b></td>
+                                    <td>Toggles rebounding upkeep.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>mass {on|off}</b></td>
+                                    <td>Toggles mass upkeep.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>hm</b></td>
+                                    <td>Toggles health or mana priority.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>br</b></td>
+                                    <td>Toggles breathing upkeep.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>ret {on|off}</b></td>
+                                    <td>Manually turn on/off retardation mode.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>vivi</b></td>
+                                    <td>Toggles vivisect mode on and off.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>gstuff</b></td>
+                                    <td>Toggles auto getting gold and shards.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>inra</b></td>
+                                    <td>Inrifts all riftable items in your inventory.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>qq / quit</b></td>
+                                    <td>Starts the quitting procedures.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Manual Curing Aliases</h2>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>cvp</b></td>
+                                    <td>Manual panick alias to try to get out of locks.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>aeon</b></td>
+                                    <td>Tells the system to go into aeon mode.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wr</b></td>
+                                    <td>Manually tells serverside to writhe.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>rs</b></td>
+                                    <td>Manually restores (survival ability)</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dh / dheal</b></td>
+                                    <td>Manually dragonheals.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>fool</b></td>
+                                    <td>Manually uses fool tarot on yourself.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>c</b></td>
+                                    <td>Manually tells serverside to concentrate.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>f</b></td>
+                                    <td>Manually tells serverside to focus on focus balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>h</b></td>
+                                    <td>Manually sips health/vitality.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>m</b></td>
+                                    <td>Manually sips mana/mentality.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>tr</b></td>
+                                    <td>Manually tells serverside to touch tree on tree balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wr</b></td>
+                                    <td>Manually tells serverside to writhe.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>ar(a|l|h|t)</b></td>
+                                    <td>Manually applies restoration to arms/legs/head/torso.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>ac</b></td>
+                                    <td>Manually tells serverside to apply caloric on salve balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>em</b></td>
+                                    <td>Manually eats moss/potash.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>p(rl|ll|ra|la|t|h)</b></td>
+                                    <td>Parry rightleg/leftleg/rightarm/ leftarm/torso/head on balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>stand</b></td>
+                                    <td>Tells the server to assume you are prone.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>blr</b></td>
+                                    <td>Queues bloodroot to eat on herb balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>gls</b></td>
+                                    <td>Queues goldenseal to eat on herb balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>kelp</b></td>
+                                    <td>Queues kelp to eat on herb balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>selm</b></td>
+                                    <td>Queues elm to be smoked on pipe balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>sval</b></td>
+                                    <td>Queues valerian to be smoked on pipe balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>sku</b></td>
+                                    <td>Queues skullcap (rebounding) to be smoked on pipe balance.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Do, Dofree and Dorepeat Aliases</h2>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>dofree {action}</b></td>
+                                    <td>Adds something to the dofree queue. Use this only for actions that require balance+equilibrium and don't cost equilibrium+balance to use. You can chain with <b>dofree action1/action2</b> like <b>dofree g gold/put gold in pack</b></td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>do {action}</b></td>
+                                    <td>Adds something to the do queue. Use this only for actions that require balance+equilibrium and cost either balance or equilibrium. You can chain with <b>do action1/action2</b> like <b>do g gold/put gold in pack/writhe</b> if the last action is the one that costs balance/equilibrium.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dor {action}</b></td>
+                                    <td>Adds something to the dorepeat queue. Use this only for actions that require balance+equilibrium and cost either balance or equilibrium. You can chain with <b>dor action1/action2</b> like <b>dor g gold/put gold in pack/butcher buffalo</b> if the last action is the one that costs balance/equilibrium.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dor</b></td>
+                                    <td>Clears the dorepeat queue.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <header>
+                        <h2>Functions</h2>
+                        </header>
+                    </section>
+                    <section>
+                        <h3>Pausing</h3>
+                        <table>
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>pause()</b></td>
+                                    <td>Pauses the system.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>unpause()</b></td>
+                                    <td>Unpauses the system.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>togglePause()</b></td>
+                                    <td>Toggles pause on and off. Used in the <b>pp</b> alias.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>softpause()</b></td>
+                                    <td>Softpauses the system. Softpause acts like pause only that it will automatically unpause in certain situations.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>unsoftpause()</b></td>
+                                    <td>UnSoftpauses the system.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>toggleSoftPause()</b></td>
+                                    <td>Toggles between softpause and unsoftpause. Used in the <b>sp</b> alias.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>Sending Commands</h3>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>osend("command")</b></td>
+                                    <td>Will send a "command" (make sure it is a string) if you're not paused, softpaused, aeoned, in retardation or in lyre mode.<br>Example: osend("dsl "..target.." curare aconite")</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>psend("party tell")</b></td>
+                                    <td>Will send a "party tell" (make sure it is a string) if you're not paused, softpaused, aeoned or in retardation.<br>Example: psend(matches[2].." WEBBED!")</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>Status Checks</h3>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>cancure()</b></td>
+                                    <td>Returns true if you're not paused, softpaused, aeoned, in retardation, lyred or asleep. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>isslowed()</b></td>
+                                    <td>Returns true if you're aeoned or in retardation. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>damagedarms()</b></td>
+                                    <td>Returns true if both arms are broken (lvl1, lvl2 or lvl3 break on both arms). Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>bothdamagedlegs()</b></td>
+                                <td>Returns true if both legs are broken (lvl1, lvl2 or lvl3 break on both legs). Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>isHindered()</b></td>
+                                    <td>Returns true if both arms are broken, you're tangled (webbed, transfixed etc), impaled, paralysed or prone. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>outriftcheck()</b></td>
+                                    <td>Returns true if you can outrift items. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>tanglecheck()</b></td>
+                                    <td>Returns true if you're impaled, webbed, roped, tied or transfixed. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>impaled()</b></td>
+                                    <td>Returns true if you're impaled, shadowstruck (daegger impale) or soulspeared. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>curative_elist("item")</b></td>
+                                    <td>Returns the alchemic cure for a herbal if settings.useTransmutation is true. Otherwise it returns the herbal. For example curative_elist("kelp") would return "aurum" if settings.useTransmutation is true.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>isDragon()</b></td>
+                                    <td>Returns true if you're in Dragonform. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>isClass("class")</b></td>
+                                    <td>Returns true if you're in that "class" and not in Dragonform. Otherwise it returns false. For example isClass("monk") returns true if you're a monk and not dragonformed.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>isFitnessClass()</b></td>
+                                    <td>Returns true if you're a class that can use Fitness, and not in dragonform. Otherwise it returns false.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>myPing()</b></td>
+                                    <td>Returns an average of the last 10 getNetworkLatency() values. More useful for tempTimers than a simple getNetworkLatency() since that can spike up and down a little.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>Do, Dofree and Dorepeat</h3>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>dofreeadd("action")</b></td>
+                                    <td>Adds an action (as a string) to the dofree queue. Dofree always happens before doqueue. Only use this for abilities that require equilibrium+balance but don't cost equilibrium+balance to use. You can add up to 7 seperate actions to the queue or chain them all in one (which is better) by seperating the actions with a / in the dofreeadd. For example dofreeadd("hi/chuckle/slap " .. target)</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dofreeclear()</b></td>
+                                    <td>Clears all actions from the dofreequeue table.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>doadd("action")</b></td>
+                                    <td>Adds an action (as a string) to the do queue. Only use this for abilities that require equilibrium+balance and cost equilibrium or balance. You can chain a few commands if the first few in the chain don't cost balance/equilibrium. For example dofreeadd("g gold/put gold in pack/writhe")</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dofirst("action")</b></td>
+                                    <td>The same as doadd, only it will be the first thing you will do, either on equilibrium/balance regain or at once.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>doradd("action")</b></td>
+                                    <td>Sets the action chain for the dorepeat queue. Dofree and do actions will always take precedence. You can use chains here and if you use it for bashing I suggest using doradd("kill &amp;tar") while setting the in game target to what you are bashing.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>dorclear()</b></td>
+                                    <td>Clears the doreapeat action.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>Defences</h3>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>keepup(def, gagecho)</b></td>
+                                    <td>Sets the def (string) to defup at the preconfigured defprio (or default 25). Setting gagecho to true will gag the feedback echo.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>unkeepup(def, gagecho)</b></td>
+                                    <td>Removes the def (string) from defup. Setting gagecho to true will gag the feedback echo.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>togglekeepup(def)</b></td>
+                                    <td>Toggles keepup or unkeepup for a def. You can use this for selfishness in an alias like so: togglekeepup("selfishness")</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Custom Prompt</h2>
+                        <p>The custom prompt string is saved in the settings.prompt variable. You can see the current prompt string by checking <b>wshow display</b>. If you click on the prompt string (which is horribly long by default) it will be pasted into your input line so you can edit it.</p>
+                        <p>You can set the custom prompt by using the <b>wconfig prompt {promptstring}</b>. For example <b>wconfig prompt @health @mana @willpower @endurance</b> would show you 6007 5339 25470 22200 or something similar. If you want to add text to that you simply add it to the end of a tag, so @healthh would change that 6007 to a 6007h. @percenthealth would show 100 if at full health, @percenthealth%h would show 100%h.</p>
+                    </section>
+                    <section>
+                        <h2>Prompt Tags:</h2>
+                        <ul class="promptList">
+                            <li><b>@health</b>: current health</li>
+                            <li><b>@percenthealth</b>: current health in percent</li>
+                            <li><b>@mana</b>: current mana</li>
+                            <li><b>@percentmana</b>: current mana in percent</li>
+                            <li><b>@endurance</b>: current endurance</li>
+                            <li><b>@percentendurance</b>: current endurance in percent</li>
+                            <li><b>@willpower</b>: current willpower</li>
+                            <li><b>@precentwillpower</b>: current willpower in percent</li>
+                            <li><b>@bal</b>: shows X for balance, default prompt uses @bal@bal</li>
+                            <li><b>@eq</b>: shows E for equilibrium, defailt prompt uses @eq@eq</li>
+                            <li><b>@target</b>: echos contents of the 'target' variable</li>
+                            <li><b>@paused</b>: shows (PP) if paused</li>
+                            <li><b>@softpaused</b>: shows (sP) if softpaused</li>
+                            <li><b>@phase</b>: shows "@" if phased, blackwinded or astralformed</li>
+                            <li><b>@retardation</b>: shows [RET] if in retardation mode</li>
+                            <li><b>@kai</b>: returns current kai value if kai tranced</li>
+                            <li><b>@shin</b>: returns current shin value if shin tranced</li>
+                            <li><b>@warning</b>: shows the warnings (behead, breathrain etc.)</li>
+                            <li><b>@mw</b>: shows "MW" if metawake is up.</li>
+                            <li><b>@breathing</b>: shows "br" if breathing is up</li>
+                            <li><b>@xp</b>: shows current % experience into the next level.</li>
+                            <li><b>@affs</b>: displays the prompt aff tags</li>
+                            <li><b>@timestamp</b>: displays a timestamp</li>
+                            <li><b>@diffhealth</b>: shows gain or loss of health</li>
+                            <li><b>@diffmana</b>: shows gain or loss of mana</li>
+                            <li><b>@def</b>: shows which defs are up. B (blindness), D (deafness), C (Cloak), K (kola), M (mass), br (breathing)</li>
+                            <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Prompt Color Tags:</h2>
+                        <ul class="promptList">
+                            <li><b>#hcolour</b>: colors something (best if you use it for the health tag of course) green if over 75% health, yellow if over 33% health and otherwise red if below 33% health</li>
+                            <li><b>#mcolour</b>: colors something (best if you use it for the mana tag of course) green if over 75% mana, yellow if over 50% mana and otherwise red if below 50% mana</li>
+                            <li><b>#kaicolour</b>: colors something (best used with the @kai tag obviously) red if below 10 kai (choke), firebrick red if below 21 kai (heal), orange if below 41 kai (cripple), yellow if below 61 kai (enfeeble), and green otherwise (can do anything)</li>
+                            <li><b>#shincolour</b>: colors something (best used with the @shin tag obviously) red if below 5 shin (can't infuse), firebrick red if below 15 shin (can't fist), orange if below 30 (can't blizzard), yellow if below 40 (can't annihilate) and green if above 75 (can phoenix and whatever else)</li>
+                            <li><b>#(colour)</b>: any color you can find in mudlet as long as it has no _ in it, so SlateGrey works, but not slate_grey. Might get that working in a future update.</li>
+                        </ul>
+                    </section>
+
+
+                </article>
+                <aside class="aside">
+                    <h3><a href="https://github.com/sailgoat/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
+                    <p>If you are installing WunderSys for the first time follow these <a href="installation.html">installation instructions</a>.</p>
+                    <p>If you are updating to the latest version of WunderSys follow these <a href="installation.html#updating">updating instructions</a>.</p>
+                </aside>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+        <div class="footer-container">
+            <footer class="wrapper">
+                <span class="copyText">WunderSys is the work of Nemutaur &copy;2014-2015, Tynil 2015-2016, Anze 2016-Current</span>
+            </footer>
+        </div>
+    </body>
+</html>
