@@ -41,26 +41,39 @@
                         <p>List of changes through the lifetime of WunderSys. Enjoy!</p>
                     </header>
                    <section>
-                        <h1>1.3 to 2.1 - Fendo</h1>
+                        <h1>1.2/1.3 to 2.1 - Fendo</h1>
                         <a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Github Releases</a>
                         <ul class="changeLogList">
                             <li>Changed: Instead of going the route of Wundersys Foundation this was pulled back into one .mpackage file for simplicity.</li>
                             <li>Changed: Added in batch priority updates to fall in line with changes from Announce #5450. These generally work, but will fall behind if too much is going on. Be warned.</li>
-                            <li>Added: Elemental Lord Support with profiles and Defences.</li>
-                            <li>Added: Additional Prompt Values for Rage, Age, Kata, Forms, and npchp. This is a work in progress.</li>
+                            <li>Added: Additional Prompt Values for Age, Kata, Forms, and npchp. Added these into documentation along with Rage. This is a work in progress.</li>
                             <li>Added: Lust allow list configuration.</li>
                             <li>Updated: Defences for the Knight class split offs. These should generally be handled now.</li>
                             <li>Updated: Additional Defences for the Knight class split offs. These should generally be handled now.</li>
                             <li>Updated: Default priorities have been reviewed and updated based around some current systems and what has been added over time.</li>
+                            <li>Fixed: Elemental Lord Support with profiles and Defences.</li>
                             <li>Fixed: Prompt2 now works correctly and can be set.</li>
                             <li>Fixed: There have been issues with some profile settings not saving consistently. This has been tracked down and fixed.</li>
                             <li>Reviewing: Working for more prompt tags to add in.</li>
                             <li>Reviewing: Working on more priority updates to bring in.</li>
                         </ul>
-                    </section>
+                   </section>
                    <section>
                         <h1>1.2 to 1.3 - Tynil</h1>
                         <a href="https://github.com/tynil/WunderSys" target="_blank">Github Releases</a>
+                        <ul class="changeLogList">
+                            <li>Changed: WunderSys now depends on WunderSys Foundation to function properly. You may either install the WunderSys+Foundation.mpackage to install both together, or you may install each xml separately. If installing separately, it is recommended to install the Foundation first and make sure it is listed above WunderSys in the scripts GUI.</li>
+                            <li>Changed: If updating from 1.3-beta-1, there were no Foundation changes. If you used the mpackage before, use it again here. Otherwise, you can keep the WunderSys Foundation scripts you already have and just install the new WunderSys.xml script separately</li>
+                            <li>Added barkskin to woodlore skillset</li>
+                            <li>Move up table initialization to fix issue (thanks Shub)</li>
+                            <li>Added some Shikudo self limb hit lines</li>
+                            <li>Gag clot attempts when not bleeding</li>
+                            <li>Fix Elemental Lord defence config (Note this will require you to re-configure your elemental lord defences if you already had them)</li>
+                            <li>Fix wsys.doOnce to work with arbitrary string commands</li>
+                            <li>Switch to pure GMCP aff tracking, using WunderSys Foundation</li>
+                            <li>Added some doqueue changes I've had locally for a long time now. The immediate impact is that curing out of locks now uses the do queue with priority 5 (e.g. fitness, dragonheal, restore). If you use the doqueue for your attacks with a greater # priority than 5, you can keep queueing your attacks without interrupting lock curing. There are probably some other smaller improvements made to the doqueue that I use, but may not be completely clean yet. Explore and use at your own risk. See wsys.overrides.doqueue.expand for details.</li>
+                            <li>Fix manual command functions (thanks Shub)</li>
+                        </ul>
                     </section>
                     <section>
                         <h1>1.1.3 to 1.2 - Anze</h1>
