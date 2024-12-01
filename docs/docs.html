@@ -76,7 +76,7 @@
                                 </tr>
                                 <tr class="list">
                                     <td><b>wbug {bug details}</b></td>
-                                    <td>Sends me (Nemutaur) a message ingame with a bug you have found.</td>
+                                    <td>Sends me (Fendo) a message ingame with a bug you have found.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>dv / diag</b></td>
@@ -392,6 +392,10 @@
                                     <td><b>isDragon()</b></td>
                                     <td>Returns true if you're in Dragonform. Otherwise it returns false.</td>
                                 </tr>
+				<tr class="list">
+                                    <td><b>wsys.isElementalLord()</b></td>
+                                    <td>Returns true if you're in Elemental Lord form. Otherwise it returns false.</td>
+                                </tr>
                                 <tr class="list">
                                     <td><b>isClass("class")</b></td>
                                     <td>Returns true if you're in that "class" and not in Dragonform. Otherwise it returns false. For example isClass("monk") returns true if you're a monk and not dragonformed.</td>
@@ -464,34 +468,40 @@
                     </section>
                     <section>
                         <h2>Prompt Tags:</h2>
+			<h4>More are being added over time as I work on this!</h4>
                         <ul class="promptList">
-                            <li><b>@health</b>: current health</li>
-                            <li><b>@percenthealth</b>: current health in percent</li>
-                            <li><b>@mana</b>: current mana</li>
-                            <li><b>@percentmana</b>: current mana in percent</li>
-                            <li><b>@endurance</b>: current endurance</li>
-                            <li><b>@percentendurance</b>: current endurance in percent</li>
-                            <li><b>@willpower</b>: current willpower</li>
-                            <li><b>@precentwillpower</b>: current willpower in percent</li>
+                            <li><b>@health</b>: current health.</li>
+                            <li><b>@percenthealth</b>: current health in percent.</li>
+                            <li><b>@mana</b>: current mana.</li>
+                            <li><b>@percentmana</b>: current mana in percent.</li>
+                            <li><b>@endurance</b>: current endurance.</li>
+                            <li><b>@percentendurance</b>: current endurance in percent.</li>
+                            <li><b>@willpower</b>: current willpower.</li>
+                            <li><b>@precentwillpower</b>: current willpower in percent.</li>
                             <li><b>@bal</b>: shows X for balance, default prompt uses @bal@bal</li>
                             <li><b>@eq</b>: shows E for equilibrium, defailt prompt uses @eq@eq</li>
-                            <li><b>@target</b>: echos contents of the 'target' variable</li>
-                            <li><b>@paused</b>: shows (PP) if paused</li>
-                            <li><b>@softpaused</b>: shows (sP) if softpaused</li>
-                            <li><b>@phase</b>: shows "@" if phased, blackwinded or astralformed</li>
-                            <li><b>@retardation</b>: shows [RET] if in retardation mode</li>
-                            <li><b>@kai</b>: returns current kai value if kai tranced</li>
-                            <li><b>@shin</b>: returns current shin value if shin tranced</li>
-                            <li><b>@warning</b>: shows the warnings (behead, breathrain etc.)</li>
+                            <li><b>@target</b>: echos contents of the 'target' variable.</li>
+                            <li><b>@paused</b>: shows (PP) if paused.</li>
+                            <li><b>@softpaused</b>: shows (sP) if softpaused.</li>
+                            <li><b>@phase</b>: shows "@" if phased, blackwinded or astralformed.</li>
+                            <li><b>@retardation</b>: shows [RET] if in retardation mode.</li>
+                            <li><b>@kai</b>: returns current kai value if kai tranced.</li>
+			    <li><b>@form</b>: returns current shikudo form value if shikudo monk.</li>
+			    <li><b>@kata</b>: returns current kata count if shikudo monk.</li>
+                            <li><b>@shin</b>: returns current shin value if shin tranced.</li>
+                            <li><b>@warning</b>: shows the warnings (behead, breathrain etc.).</li>
                             <li><b>@mw</b>: shows "MW" if metawake is up.</li>
-                            <li><b>@breathing</b>: shows "br" if breathing is up</li>
+                            <li><b>@breathing</b>: shows "br" if breathing is up.</li>
                             <li><b>@xp</b>: shows current % experience into the next level.</li>
-                            <li><b>@affs</b>: displays the prompt aff tags</li>
-                            <li><b>@timestamp</b>: displays a timestamp</li>
-                            <li><b>@diffhealth</b>: shows gain or loss of health</li>
-                            <li><b>@diffmana</b>: shows gain or loss of mana</li>
-                            <li><b>@def</b>: shows which defs are up. B (blindness), D (deafness), C (Cloak), K (kola), M (mass), br (breathing)</li>
-                            <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up</li>
+			    <li><b>@npchp</b>: shows current NPC health percent if targetting an NPC.</li>
+			    <li><b>@rage</b>: shows current battlerage.</li>
+		            <li><b>@age</b>: shows current age if depthswalker.</li>
+                            <li><b>@affs</b>: displays the prompt aff tags.</li>
+                            <li><b>@timestamp</b>: displays a timestamp.</li>
+                            <li><b>@diffhealth</b>: shows gain or loss of health.</li>
+                            <li><b>@diffmana</b>: shows gain or loss of mana.</li>
+                            <li><b>@def</b>: shows which defs are up. B (blindness), D (deafness), C (Cloak), K (kola), M (mass), br (breathing).</li>
+                            <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up.</li>
                         </ul>
                     </section>
                     <section>
@@ -504,11 +514,9 @@
                             <li><b>#(colour)</b>: any color you can find in mudlet as long as it has no _ in it, so SlateGrey works, but not slate_grey. Might get that working in a future update.</li>
                         </ul>
                     </section>
-
-
                 </article>
                 <aside class="aside">
-                    <h3><a href="https://github.com/sailgoat/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
+                    <h3><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
                     <p>If you are installing WunderSys for the first time follow these <a href="installation.html">installation instructions</a>.</p>
                     <p>If you are updating to the latest version of WunderSys follow these <a href="installation.html#updating">updating instructions</a>.</p>
                 </aside>
@@ -516,7 +524,7 @@
         </div> <!-- #main-container -->
         <div class="footer-container">
             <footer class="wrapper">
-                <span class="copyText">WunderSys is the work of Nemutaur &copy;2014-2015, Tynil 2015-2016, Anze 2016-Current</span>
+                <span class="copyText">WunderSys is the work of Nemutaur &copy;2014-2015, Tynil 2015-2016,2019, Anze 2016-2018, Fendo 2024 - Current</span>
             </footer>
         </div>
     </body>
