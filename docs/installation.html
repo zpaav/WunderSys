@@ -35,26 +35,24 @@
         </div>
         <div class="main-container">
             <div class="main wrapper clearfix">
-
                 <article>
                     <header>
                         <h1>Installation</h1>
-                        <p> Before downloading and importing the WunderSys .zip file please configure your Serverside Curing.</p>
+                        <p> Before downloading and importing the WunderSys .mpackage file please configure your Serverside Curing.</p>
                         <p> Turn on curing by doing <b>CURING ON</b>, <b>CURING AFFLICTIONS ON.</b></p>
                         <p>If you use Concoctions do <b>CURING TRANSMUTATION OFF</b>, if Transmutation then <b>CURING TRANSMUTATION ON</b>.</p>
                         <p>Set your health and mana sip thresholds by doing <b>CURING SIPHEALTH|SIPMANA {percent}</b> (80 is a good start).</p>
                         <p>Set your moss health and mana eating thresholds by doing <b>CURING MOSSHEALTH|MOSSMANA {percent}</b> (10 below your sip health, so 70 if you used 80).</p>
                         <p>Lastly enable GMCP in your Mudlet Settings.</p>
-
-                        <p>Download the .zip file of WunderSys.</p>
+                        <p>Download the .mpackage file of WunderSys.</p>
                         <p>Once it is installed and you are logged in check the settings <b>(wshow settings)</b> and configure your pipes <b>(wconfig valerianpipe|elmpipe|skullcappipe {number})</b>.</p>
                         <p>Set the useinsomnia, usefocus, useclot and userage (Chivalry users only) accordingly, for example <b>wconfig usefocus true</b>.</p>
                     </header>
                     <section>
                         <a name="updating"><h2>Updating WunderSys</h2></a>
-                        <p> Download the new WunderSys .zip file.</p>
+                        <p> Download the new WunderSys .mpackage file.</p>
                         <p>Use the Package Manager to remove your current WunderSys installation. If you want to keep your current Affliction Priority order, Defence Keepup order and Precache settings please move those out and below of your WunderSys script folder.</p>
-                        <p>Using the same Package Manager install the new WunderSys .zip (or .xml file if your browser automatically unzips downloads) and then restart mudlet.</p>
+                        <p>Using the same Package Manager install the new WunderSys .mpackage file and then restart mudlet.</p>
                     </section>
                     <section>
                         <h2>Affliction Priorities</h2>
@@ -63,11 +61,11 @@
                     </section>
                     <section>
                         <h2>Defence Management</h2>
-                        <p>Currently there is only a 'basic' profile which contains both keepup and defup defences. It is also different for each class (in preparation for multiclass or class changes), which includes Dragon as its own class. (Turn on Serverside defence keepup by doing <b>CURING DEFENCES ON</b>.)</p>
+                        <p>Currently there is only a 'basic' profile which contains both keepup and defup defences. It is also different for each class, which includes Dragon and Elemental Lords as their own classes. (Turn on Serverside defence keepup by doing <b>CURING DEFENCES ON</b>.)</p>
                         <p>To set the defences you want to keep up at all times use the wshow keepup alias and click on the defence names you want to keep up at all times.</p>
                         <p>To set the defences you want to def up with the <b>bdef</b> alias use the <b>wshow defup</b> alias and click on the defence names you want to def up.</p>
                         <p>While you can have stuff checked in both defup and keepup, I suggest you keep things seperate and only put things on defup that are not also on in keepup.</p>
-                        <p>Some defences aren't quite supported by Serverside curing so I have manual commands for those. They cannot be 'kept up'. The list of those are: Affinity, Astralvision, Barkskin, Bell tatoo, Firefly tattoo, Shield tattoo, Phase, Myrrh, Starburst tatoo, Spirit bonding.</p>
+                        <p>Some defences aren't quite supported by Serverside curing so I have manual commands for those. They cannot be 'kept up'. The list of those are: Affinity, Astralvision, Bell tatoo, Firefly tattoo, Shield tattoo, Phase, Myrrh, Starburst tatoo, Spirit bonding.</p>
                         <p>After you have set what defences you want to keep up and def up you should configure the priorities for them. Setting the priorities for keepup defs will set the order in which they are deffed and also influences the curing especially when mass/densitiy and insulation defs with the salve queue.</p>
                         <p>The priorities for your defup defences will change determine what is deffed up first when you use the <b>bdef</b> alias. So things like cloak and mindseye should take precedence over the curseward and deathsight defence for example.</p>
                         <p>You can check the current defence priorities with the <b>wshow defprio</b> alias. You can then click on the - to reduce the priority (which moves it up, a little roundabout to think about) or the + to increase its defence priority value and move it down.</p>
@@ -85,7 +83,7 @@
                     </section>
                 </article>
                 <aside class="aside">
-                    <h3><a href="https://github.com/sailgoat/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
+                    <h3><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
                     <p>If you are installing WunderSys for the first time follow these <a href="installation.html">installation instructions</a>.</p>
                     <p>If you are updating to the latest version of WunderSys follow these <a href="installation.html#updating">updating instructions</a>.</p>
                 </aside>
@@ -93,7 +91,7 @@
         </div> <!-- #main-container -->
         <div class="footer-container">
              <footer class="wrapper">
-                <span class="copyText">WunderSys is the work of Nemutaur &copy;2014-2015, Tynil 2015-2016, Anze 2016-Current</span>
+                <span class="copyText">WunderSys is the work of Nemutaur &copy;2014-2015, Tynil 2015-2016,2019, Anze 2016-2018, Fendo 2024 - Current</span>
             </footer>
         </div>
     </body>
