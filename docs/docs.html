@@ -15,14 +15,14 @@
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-		        <a href="index.html">
-		          <div class="heroLogo title">
-		            <i class="lCircle"></i>
-		            <i class="sCircle"></i>
-		            <i class="mCircle"></i>
-		            <h2>WunderSys</h2>
-		          </div>
-		        </a>
+		<a href="index.html">
+		  <div class="heroLogo title">
+		    <i class="lCircle"></i>
+		    <i class="sCircle"></i>
+		    <i class="mCircle"></i>
+		    <h2>WunderSys</h2>
+		  </div>
+		</a>
                 <nav>
                     <ul>
                         <li><a href="installation.html">Installation</a></li>
@@ -65,6 +65,10 @@
                                 <tr class="list">
                                     <td><b>wconfig {setting} {value}</b></td>
                                     <td>Set a setting to a certain value</td>
+                                </tr>
+				<tr class="list">
+                                    <td><b>wconfig lustlist {add|remove|clear} {name}</b></td>
+                                    <td>Configure the lust allowlist with a name. Can add or remove a name, or clear the whole list.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsystem restore default</b></td>
@@ -465,6 +469,7 @@
                         <h2>Custom Prompt</h2>
                         <p>The custom prompt string is saved in the settings.prompt variable. You can see the current prompt string by checking <b>wshow display</b>. If you click on the prompt string (which is horribly long by default) it will be pasted into your input line so you can edit it.</p>
                         <p>You can set the custom prompt by using the <b>wconfig prompt {promptstring}</b>. For example <b>wconfig prompt @health @mana @willpower @endurance</b> would show you 6007 5339 25470 22200 or something similar. If you want to add text to that you simply add it to the end of a tag, so @healthh would change that 6007 to a 6007h. @percenthealth would show 100 if at full health, @percenthealth%h would show 100%h.</p>
+			<p>There is a secondary prompt that can be configured with wconfig promptline2 {promptstring} as well or false to disable.</p>
                     </section>
                     <section>
                         <h2>Prompt Tags:</h2>
