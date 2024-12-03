@@ -42,7 +42,7 @@
                         <h1>Documentation.</h1>
                         <p>All of the Aliases and Functions for WunderSys.</p>
                     </header>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>System Aliases</h2>
                             <table class="list">
@@ -67,7 +67,7 @@
                                     <td><b>wconfig {setting} {value}</b></td>
                                     <td>Set a setting to a certain value</td>
                                 </tr>
-				<tr class="list">
+				                <tr class="list">
                                     <td><b>wconfig lustlist {add|remove|clear} {name}</b></td>
                                     <td>Configure the lust allowlist with a name. Can add or remove a name, or clear the whole list.</td>
                                 </tr>
@@ -142,7 +142,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>		
+		            <br/>		
                     <section>
                         <h2>Manual Curing Aliases</h2>
                         <table class="list">
@@ -238,7 +238,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>Profile Management</h2>
                         <table class="list">
@@ -277,7 +277,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>Do, Dofree and Dorepeat Aliases</h2>
                         <table class="list">
@@ -301,13 +301,13 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <header>
                         <h2>Functions</h2>
                         </header>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h3>Pausing</h3>
                         <table>
@@ -339,7 +339,7 @@
                             </tbody>
                         </table>
                     </section>
-		   <br/>
+		           <br/>
                     <section>
                         <h3>Sending Commands</h3>
                         <table class="list">
@@ -355,7 +355,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h3>Status Checks</h3>
                         <table class="list">
@@ -400,7 +400,7 @@
                                     <td><b>isDragon()</b></td>
                                     <td>Returns true if you're in Dragonform. Otherwise it returns false.</td>
                                 </tr>
-				<tr class="list">
+				                <tr class="list">
                                     <td><b>wsys.isElementalLord()</b></td>
                                     <td>Returns true if you're in Elemental Lord form. Otherwise it returns false.</td>
                                 </tr>
@@ -419,7 +419,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h3>Do, Dofree and Dorepeat</h3>
                         <table class="list">
@@ -451,7 +451,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h3>Defences</h3>
                         <table class="list">
@@ -471,17 +471,17 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>Custom Prompt</h2>
                         <p>The custom prompt string is saved in the settings.prompt variable. You can see the current prompt string by checking <b>wshow display</b>. If you click on the prompt string (which is horribly long by default) it will be pasted into your input line so you can edit it.</p>
                         <p>You can set the custom prompt by using the <b>wconfig prompt {promptstring}</b>. For example <b>wconfig prompt @health @mana @willpower @endurance</b> would show you 6007 5339 25470 22200 or something similar. If you want to add text to that you simply add it to the end of a tag, so @healthh would change that 6007 to a 6007h. @percenthealth would show 100 if at full health, @percenthealth%h would show 100%h.</p>
-			<p>There is a secondary prompt that can be configured with wconfig promptline2 {promptstring} as well or false to disable.</p>
+			            <p>There is a secondary prompt that can be configured with wconfig promptline2 {promptstring} as well or false to disable.</p>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>Prompt Tags:</h2>
-			<h4>More are being added over time as I work on this!</h4>
+			            <h4>More are being added over time as I work on this!</h4>
                         <ul class="promptList">
                             <li><b>@health</b>: current health.</li>
                             <li><b>@percenthealth</b>: current health in percent.</li>
@@ -498,27 +498,48 @@
                             <li><b>@softpaused</b>: shows (sP) if softpaused.</li>
                             <li><b>@phase</b>: shows "@" if phased, blackwinded or astralformed.</li>
                             <li><b>@retardation</b>: shows [RET] if in retardation mode.</li>
-                            <li><b>@kai</b>: returns current kai value if kai tranced.</li>
-			    <li><b>@form</b>: returns current shikudo form value if shikudo monk.</li>
-			    <li><b>@kata</b>: returns current kata count if shikudo monk.</li>
-                            <li><b>@shin</b>: returns current shin value if shin tranced.</li>
-                            <li><b>@warning</b>: shows the warnings (behead, breathrain etc.).</li>
                             <li><b>@mw</b>: shows "MW" if metawake is up.</li>
                             <li><b>@breathing</b>: shows "br" if breathing is up.</li>
-                            <li><b>@xp</b>: shows current % experience into the next level.</li>
-			    <li><b>@npchp</b>: shows current NPC health percent if targetting an NPC.</li>
-			    <li><b>@rage</b>: shows current battlerage.</li>
-		            <li><b>@age</b>: shows current age if depthswalker.</li>
-                            <li><b>@affs</b>: displays the prompt aff tags.</li>
-			    <li><b>@airLevel</b>: displays pressure count from an airlord.</li>
+                            <li><b>@airLevel</b>: displays pressure count from an airlord.</li>
                             <li><b>@timestamp</b>: displays a timestamp.</li>
                             <li><b>@diffhealth</b>: shows gain or loss of health.</li>
                             <li><b>@diffmana</b>: shows gain or loss of mana.</li>
                             <li><b>@def</b>: shows which defs are up. B (blindness), D (deafness), C (Cloak), K (kola), M (mass), br (breathing).</li>
                             <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up.</li>
+                            <li><b>@warning</b>: shows the warnings (behead, breathrain etc.).</li>
+                            <li><b>@affs</b>: displays the prompt aff tags.</li>
+                            <li><b>@xp</b>: shows current % experience into the next level.</li>
+                            <li><b>@npchp</b>: shows current NPC health percent if targetting an NPC.</li>
+                            <li><b>@rage</b>: shows current battlerage.</li>
+                            <li><b>@essence</b>: shows current essence. (apostate and infernal)</li>
+                            <li><b>@voice</b>: shows current voice. (bard)</li>
+                            <li><b>@shin</b>: returns current shin value if shin tranced. (blademaster)</li>
+                            <li><b>@stance</b>: returns current stance. (bard, blademaster, or tekura monk.)</li>
+                            <li><b>@age</b>: shows current age. (depthswalker)</li>
+                            <li><b>@word</b>: shows word balance. (depthswalker)</li>
+                            <li><b>@kai</b>: returns current kai value if kai tranced. (monk)</li>
+                            <li><b>@form</b>: returns current shikudo form. (shikudo monk)</li>
+                            <li><b>@kata</b>: returns current kata count. (shikudo monk)</li>
+                            <li><b>@morph</b>: returns current morph. (druid and sentinel)</li>
+                            <li><b>@channels</b>: returns current channels. (magi and sylvan)</li>
+                            <li><b>@karma</b>: returns current karma. (occultist and unnamable)</li>
+                            <li><b>@entity</b>: returns current entity. (occultist)</li>
+                            <li><b>@anathema</b>: returns current anathema. (unnamable)</li>
+                            <li><b>@manifestation</b>: returns current manifestation. (unnamable)</li>
+                            <li><b>@wrath</b>: returns current wrath. (paladin)</li>
+                            <li><b>@wrathbal</b>: returns current wrath balance. (paladin)</li>
+                            <li><b>@epitaph</b>: returns current epitaph length. (pariah)</li>
+                            <li><b>@devotion</b>: returns current devotion. (priest)</li>
+                            <li><b>@prayer</b>: returns current prayer. (priest)</li>
+                            <li><b>@prayerlength</b>: returns current prayerlength. (priest)</li>
+                            <li><b>@angelpower</b>: returns current angelpower. (priest)</li>
+                            <li><b>@conviction</b>: returns current conviction. (priest)</li>
+                            <li><b>@empower</b>: returns current empower. (runewarden)</li>
+                            <li><b>@venom</b>: returns current venom. (serpent)</li>
+                            <li><b>@spirits</b>: returns current spirits. (shaman)</li>
                         </ul>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>Prompt Color Tags:</h2>
                         <ul class="promptList">
@@ -529,12 +550,12 @@
                             <li><b>#(colour)</b>: any color you can find in mudlet as long as it has no _ in it, so SlateGrey works, but not slate_grey. Might get that working in a future update.</li>
                         </ul>
                     </section>
-		    <br/>
+		            <br/>
                     <section>
                         <h2>Custom Reporting Echoes</h2>
                         <p>You can overwrite the wundersys.report() and other reporting functions and customize it to your liking by copying the function outside of Wundersys (place it below Wundersys) then editing to your content.</p>
                     </section>
-		    <br/>
+		        <br/>
                 </article>
                 <aside class="aside">
                     <h3><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
