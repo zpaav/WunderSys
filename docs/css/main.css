@@ -93,6 +93,7 @@ table tr:hover{background-color:#C9C9C9}
     nav {float: right; width: 45%; }
     .main article {float: left; width: 64%; }
     .main aside {float: right; width: 23%; }
+    .main article.noaside {float: left; width: 100%; }
     .twitterBird{float:right;margin-left:10px;}
     table td{border:1px #222 solid;padding:10px;font-size:1em;}
 }
