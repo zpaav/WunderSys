@@ -25,6 +25,7 @@
 		</a>
                 <nav>
                     <ul>
+			<li><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download</a></li>
                         <li><a href="installation.html">Installation</a></li>
                         <li><a href="docs.html">Docs</a></li>
                         <li><a href="releases.html">Changelog</a></li>
@@ -33,16 +34,14 @@
                 </nav>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
-
                 <article>
                     <header>
                         <h1>Documentation.</h1>
                         <p>All of the Aliases and Functions for WunderSys.</p>
                     </header>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>System Aliases</h2>
                             <table class="list">
@@ -67,7 +66,7 @@
                                     <td><b>wconfig {setting} {value}</b></td>
                                     <td>Set a setting to a certain value</td>
                                 </tr>
-				                <tr class="list">
+				<tr class="list">
                                     <td><b>wconfig lustlist {add|remove|clear} {name}</b></td>
                                     <td>Configure the lust allowlist with a name. Can add or remove a name, or clear the whole list.</td>
                                 </tr>
@@ -142,7 +141,7 @@
                             </tbody>
                         </table>
                     </section>
-		            <br/>		
+		    <br/>		
                     <section>
                         <h2>Manual Curing Aliases</h2>
                         <table class="list">
@@ -238,7 +237,7 @@
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>Profile Management</h2>
                         <table class="list">
@@ -277,7 +276,7 @@
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>Do, Dofree and Dorepeat Aliases</h2>
                         <table class="list">
@@ -301,151 +300,152 @@
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <header>
                         <h2>Functions</h2>
+			<p>Note: Wundersys uses the wsys. namespace.</p>
                         </header>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h3>Pausing</h3>
                         <table>
                             <tbody>
                                 <tr class="list">
-                                    <td><b>pause()</b></td>
+                                    <td><b>wsys.pause()</b></td>
                                     <td>Pauses the system.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>unpause()</b></td>
+                                    <td><b>wsys.unpause()</b></td>
                                     <td>Unpauses the system.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>togglePause()</b></td>
+                                    <td><b>wsys.togglePause()</b></td>
                                     <td>Toggles pause on and off. Used in the <b>pp</b> alias.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>softpause()</b></td>
+                                    <td><b>wsys.softpause()</b></td>
                                     <td>Softpauses the system. Softpause acts like pause only that it will automatically unpause in certain situations.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>unsoftpause()</b></td>
+                                    <td><b>wsys.unsoftpause()</b></td>
                                     <td>UnSoftpauses the system.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>toggleSoftPause()</b></td>
+                                    <td><b>wsys.toggleSoftPause()</b></td>
                                     <td>Toggles between softpause and unsoftpause. Used in the <b>sp</b> alias.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-		           <br/>
+		    <br/>
                     <section>
                         <h3>Sending Commands</h3>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
-                                    <td><b>osend("command")</b></td>
+                                    <td><b>wsys.osend("command")</b></td>
                                     <td>Will send a "command" (make sure it is a string) if you're not paused, softpaused, aeoned, in retardation or in lyre mode.<br>Example: osend("dsl "..target.." curare aconite")</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>psend("party tell")</b></td>
+                                    <td><b>wsys.psend("party tell")</b></td>
                                     <td>Will send a "party tell" (make sure it is a string) if you're not paused, softpaused, aeoned or in retardation.<br>Example: psend(matches[2].." WEBBED!")</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h3>Status Checks</h3>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
-                                    <td><b>cancure()</b></td>
+                                    <td><b>wsys.cancure()</b></td>
                                     <td>Returns true if you're not paused, softpaused, aeoned, in retardation, lyred or asleep. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>isslowed()</b></td>
+                                    <td><b>wsys.isslowed()</b></td>
                                     <td>Returns true if you're aeoned or in retardation. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>damagedarms()</b></td>
+                                    <td><b>wsys.damagedarms()</b></td>
                                     <td>Returns true if both arms are broken (lvl1, lvl2 or lvl3 break on both arms). Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>bothdamagedlegs()</b></td>
+                                    <td><b>wsys.bothdamagedlegs()</b></td>
                                 <td>Returns true if both legs are broken (lvl1, lvl2 or lvl3 break on both legs). Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>isHindered()</b></td>
+                                    <td><b>wsys.isHindered()</b></td>
                                     <td>Returns true if both arms are broken, you're tangled (webbed, transfixed etc), impaled, paralysed or prone. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>outriftcheck()</b></td>
+                                    <td><b>wsys.outriftcheck()</b></td>
                                     <td>Returns true if you can outrift items. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>tanglecheck()</b></td>
+                                    <td><b>wsys.tanglecheck()</b></td>
                                     <td>Returns true if you're impaled, webbed, roped, tied or transfixed. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>impaled()</b></td>
+                                    <td><b>wsys.impaled()</b></td>
                                     <td>Returns true if you're impaled, shadowstruck (daegger impale) or soulspeared. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>curative_elist("item")</b></td>
+                                    <td><b>wsys.curative_elist("item")</b></td>
                                     <td>Returns the alchemic cure for a herbal if settings.useTransmutation is true. Otherwise it returns the herbal. For example curative_elist("kelp") would return "aurum" if settings.useTransmutation is true.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>isDragon()</b></td>
+                                    <td><b>wsys.isDragon()</b></td>
                                     <td>Returns true if you're in Dragonform. Otherwise it returns false.</td>
                                 </tr>
-				                <tr class="list">
+				<tr class="list">
                                     <td><b>wsys.isElementalLord()</b></td>
                                     <td>Returns true if you're in Elemental Lord form. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>isClass("class")</b></td>
+                                    <td><b>wsys.isClass("class")</b></td>
                                     <td>Returns true if you're in that "class" and not in Dragonform. Otherwise it returns false. For example isClass("monk") returns true if you're a monk and not dragonformed.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>isFitnessClass()</b></td>
+                                    <td><b>wsys.isFitnessClass()</b></td>
                                     <td>Returns true if you're a class that can use Fitness, and not in dragonform. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>myPing()</b></td>
+                                    <td><b>wsys.myPing()</b></td>
                                     <td>Returns an average of the last 10 getNetworkLatency() values. More useful for tempTimers than a simple getNetworkLatency() since that can spike up and down a little.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		   <br/>
                     <section>
                         <h3>Do, Dofree and Dorepeat</h3>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
-                                    <td><b>dofreeadd("action")</b></td>
+                                    <td><b>wsys.dofreeadd("action")</b></td>
                                     <td>Adds an action (as a string) to the dofree queue. Dofree always happens before doqueue. Only use this for abilities that require equilibrium+balance but don't cost equilibrium+balance to use. You can add up to 7 seperate actions to the queue or chain them all in one (which is better) by seperating the actions with a / in the dofreeadd. For example dofreeadd("hi/chuckle/slap " .. target)</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>dofreeclear()</b></td>
+                                    <td><b>wsys.dofreeclear()</b></td>
                                     <td>Clears all actions from the dofreequeue table.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>doadd("action")</b></td>
+                                    <td><b>wsys.doadd("action")</b></td>
                                     <td>Adds an action (as a string) to the do queue. Only use this for abilities that require equilibrium+balance and cost equilibrium or balance. You can chain a few commands if the first few in the chain don't cost balance/equilibrium. For example dofreeadd("g gold/put gold in pack/writhe")</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>dofirst("action")</b></td>
+                                    <td><b>wsys.dofirst("action")</b></td>
                                     <td>The same as doadd, only it will be the first thing you will do, either on equilibrium/balance regain or at once.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>doradd("action")</b></td>
+                                    <td><b>wsys.doradd("action")</b></td>
                                     <td>Sets the action chain for the dorepeat queue. Dofree and do actions will always take precedence. You can use chains here and if you use it for bashing I suggest using doradd("kill &amp;tar") while setting the in game target to what you are bashing.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>dorclear()</b></td>
+                                    <td><b>wsys.dorclear()</b></td>
                                     <td>Clears the doreapeat action.</td>
                                 </tr>
                             </tbody>
@@ -457,31 +457,31 @@
                         <table class="list">
                             <tbody>
                                 <tr class="list">
-                                    <td><b>keepup(def, gagecho)</b></td>
+                                    <td><b>wsys.keepup(def, gagecho)</b></td>
                                     <td>Sets the def (string) to defup at the preconfigured defprio (or default 25). Setting gagecho to true will gag the feedback echo.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>unkeepup(def, gagecho)</b></td>
+                                    <td><b>wsys.unkeepup(def, gagecho)</b></td>
                                     <td>Removes the def (string) from defup. Setting gagecho to true will gag the feedback echo.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>togglekeepup(def)</b></td>
+                                    <td><b>wsys.togglekeepup(def)</b></td>
                                     <td>Toggles keepup or unkeepup for a def. You can use this for selfishness in an alias like so: togglekeepup("selfishness")</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>Custom Prompt</h2>
                         <p>The custom prompt string is saved in the settings.prompt variable. You can see the current prompt string by checking <b>wshow display</b>. If you click on the prompt string (which is horribly long by default) it will be pasted into your input line so you can edit it.</p>
                         <p>You can set the custom prompt by using the <b>wconfig prompt {promptstring}</b>. For example <b>wconfig prompt @health @mana @willpower @endurance</b> would show you 6007 5339 25470 22200 or something similar. If you want to add text to that you simply add it to the end of a tag, so @healthh would change that 6007 to a 6007h. @percenthealth would show 100 if at full health, @percenthealth%h would show 100%h.</p>
-			            <p>There is a secondary prompt that can be configured with wconfig promptline2 {promptstring} as well or false to disable.</p>
+			<p>There is a secondary prompt that can be configured with wconfig promptline2 {promptstring} as well or false to disable.</p>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>Prompt Tags:</h2>
-			            <h4>More are being added over time as I work on this!</h4>
+			<h4>More are being added over time as I work on this!</h4>
                         <ul class="promptList">
                             <li><b>@health</b>: current health.</li>
                             <li><b>@percenthealth</b>: current health in percent.</li>
@@ -539,7 +539,7 @@
                             <li><b>@spirits</b>: returns current spirits. (shaman)</li>
                         </ul>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>Prompt Color Tags:</h2>
                         <ul class="promptList">
@@ -550,12 +550,12 @@
                             <li><b>#(colour)</b>: any color you can find in mudlet as long as it has no _ in it, so SlateGrey works, but not slate_grey. Might get that working in a future update.</li>
                         </ul>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h2>Custom Reporting Echoes</h2>
                         <p>You can overwrite the wundersys.report() and other reporting functions and customize it to your liking by copying the function outside of Wundersys (place it below Wundersys) then editing to your content.</p>
                     </section>
-		        <br/>
+		   <br/>
                 </article>
                 <aside class="aside">
                     <h3><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download WunderSys</a></h3>
