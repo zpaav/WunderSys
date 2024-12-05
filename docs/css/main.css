@@ -65,6 +65,7 @@ p a:hover{color:#F00;text-shadow:none;}
 .promptList li{list-style:none;}
 table{border:1px #222 solid;-webkit-box-shadow: 0 5px 10px #aaa; -moz-box-shadow: 0 5px 10px #aaa; box-shadow: 0 5px 10px #aaa;}
 table td{border:1px #222 solid;padding:5px;font-size:.9em;}
+table tr td:first-child {white-space: nowrap;}
 table tr{-webkit-transition: background-color 500ms ease; -moz-transition: background-color 500ms ease;-o-transition: background-color 500ms ease; transition: background-color 500ms ease;}
 table tr:nth-of-type(even){background-color:#FAFAFA;}
 table tr:nth-of-type(odd){background-color:#E4E4E4;}
