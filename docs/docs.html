@@ -358,11 +358,11 @@
                             <tbody>
                                 <tr class="list">
                                     <td><b>wsys.osend("command")</b></td>
-                                    <td>Will send a "command" (make sure it is a string) if you're not paused, softpaused, aeoned, in retardation or in lyre mode.<br>Example: osend("dsl "..target.." curare aconite")</td>
+                                    <td>Will send a "command" (make sure it is a string) if you're not paused, softpaused, aeoned, in retardation or in lyre mode.<br>Example: wsys.osend("dsl "..target.." curare aconite")</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.psend("party tell")</b></td>
-                                    <td>Will send a "party tell" (make sure it is a string) if you're not paused, softpaused, aeoned or in retardation.<br>Example: psend(matches[2].." WEBBED!")</td>
+                                    <td>Will send a "party tell" (make sure it is a string) if you're not paused, softpaused, aeoned or in retardation.<br>Example: wsys.psend(matches[2].." WEBBED!")</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -406,7 +406,7 @@
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.curative_elist("item")</b></td>
-                                    <td>Returns the alchemic cure for a herbal if settings.useTransmutation is true. Otherwise it returns the herbal. For example curative_elist("kelp") would return "aurum" if settings.useTransmutation is true.</td>
+                                    <td>Returns the alchemic cure for a herbal if settings.useTransmutation is true. Otherwise it returns the herbal. For example wsys.curative_elist("kelp") would return "aurum" if wsys.settings.useTransmutation is true.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.isDragon()</b></td>
@@ -418,7 +418,7 @@
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.isClass("class")</b></td>
-                                    <td>Returns true if you're in that "class" and not in Dragonform. Otherwise it returns false. For example isClass("monk") returns true if you're a monk and not dragonformed.</td>
+                                    <td>Returns true if you're in that "class" and not in Dragonform. Otherwise it returns false. For example wsys.isClass("monk") returns true if you're a monk and not dragonformed.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.isFitnessClass()</b></td>
@@ -439,7 +439,7 @@
                             <tbody>
                                 <tr class="list">
                                     <td><b>wsys.dofreeadd("action")</b></td>
-                                    <td>Adds an action (as a string) to the dofree queue. Dofree always happens before doqueue. Only use this for abilities that require equilibrium+balance but don't cost equilibrium+balance to use. You can add up to 7 seperate actions to the queue or chain them all in one (which is better) by seperating the actions with a / in the dofreeadd. For example dofreeadd("hi/chuckle/slap " .. target)</td>
+                                    <td>Adds an action (as a string) to the dofree queue. Dofree always happens before doqueue. Only use this for abilities that require equilibrium+balance but don't cost equilibrium+balance to use. You can add up to 7 seperate actions to the queue or chain them all in one (which is better) by seperating the actions with a / in the dofreeadd. For example wsys.dofreeadd("hi/chuckle/slap " .. target)</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.dofreeclear()</b></td>
@@ -447,7 +447,7 @@
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.doadd("action")</b></td>
-                                    <td>Adds an action (as a string) to the do queue. Only use this for abilities that require equilibrium+balance and cost equilibrium or balance. You can chain a few commands if the first few in the chain don't cost balance/equilibrium. For example dofreeadd("g gold/put gold in pack/writhe")</td>
+                                    <td>Adds an action (as a string) to the do queue. Only use this for abilities that require equilibrium+balance and cost equilibrium or balance. You can chain a few commands if the first few in the chain don't cost balance/equilibrium. For example wsys.dofreeadd("g gold/put gold in pack/writhe")</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.dofirst("action")</b></td>
@@ -455,11 +455,15 @@
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.doradd("action")</b></td>
-                                    <td>Sets the action chain for the dorepeat queue. Dofree and do actions will always take precedence. You can use chains here and if you use it for bashing I suggest using doradd("kill &amp;tar") while setting the in game target to what you are bashing.</td>
+                                    <td>Sets the action chain for the dorepeat queue. Dofree and do actions will always take precedence. You can use chains here and if you use it for bashing I suggest using wsys.doradd("kill &amp;tar") while setting the in game target to what you are bashing.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.dorclear()</b></td>
-                                    <td>Clears the doreapeat action.</td>
+                                    <td>Clears the doreapeat action. This displays a dor cleared message.</td>
+                                </tr>
+				<tr class="list">
+                                    <td><b>wsys.dorclearQuiet()</b></td>
+                                    <td>Clears the doreapeat action. This will not display a message it cleared.</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -479,7 +483,7 @@
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.togglekeepup(def)</b></td>
-                                    <td>Toggles keepup or unkeepup for a def. You can use this for selfishness in an alias like so: togglekeepup("selfishness")</td>
+                                    <td>Toggles keepup or unkeepup for a def. You can use this for selfishness in an alias like so: wsys.togglekeepup("selfishness")</td>
                                 </tr>
                             </tbody>
                         </table>
