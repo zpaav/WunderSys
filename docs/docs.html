@@ -442,6 +442,10 @@
                                     <td>Adds an action (as a string) to the dofree queue. Dofree always happens before doqueue. Only use this for abilities that require equilibrium+balance but don't cost equilibrium+balance to use. You can add up to 7 seperate actions to the queue or chain them all in one (which is better) by seperating the actions with a / in the dofreeadd. For example wsys.dofreeadd("hi/chuckle/slap " .. target)</td>
                                 </tr>
                                 <tr class="list">
+                                    <td><b>wsys.dofreefirst("action")</b></td>
+                                    <td>The same as dofreeadd, only it will be the first thing you will do. Dofree always happens before doqueue. Only use this for abilities that require equilibrium+balance but don't cost equilibrium+balance to use. You can add up to 7 seperate actions to the queue or chain them all in one (which is better) by seperating the actions with a / in the dofreeadd. For example wsys.dofreeadd("hi/chuckle/slap " .. target)</td>
+                                </tr>
+                                <tr class="list">
                                     <td><b>wsys.dofreeclear()</b></td>
                                     <td>Clears all actions from the dofreequeue table.</td>
                                 </tr>
