@@ -55,7 +55,7 @@
 				<li>Moss Health (match this to what you set on the CURING setup: <b>wconfig mosshealth #</b></li>
 				<li>Moss Mana (match this to what you set on the CURING setup: <b>wconfig mossmana #</b></li>
 				<li>Use Focus: <b>wconfig usefocus {true|false}</b></li>
-				<li>Use Auto Tree: <b>wconfig autotree {true|false}</b> - Configures Autotree usage from Serverside. Please read the <a href="installation.html#serverTree">Serverside Tree Scenarios</a> section at the bottom for details.</li>
+				<li>Use Auto Tree: <b>wconfig autotree {true|false}</b> - Configures the serverside autotree usage. Please read the <a href="installation.html#serverTree">Serverside Tree Scenarios</a> section at the bottom for details.</li>
 				<li>Use Clot: <b>wconfig useclot {true|false}</b></li>
 				<li>Use Rage (chivalry users only): <b>wconfig userage {true|false}</b></li>
 			   </ul>
@@ -95,15 +95,14 @@
                     </section>
 		    <section>
                         <h2><a name="serverTree">Serverside Tree Scenarios</a></h2>
-                        <p>You will want to setup the serverside curing tree scenarios example of setting one up. You can also read <b>HELP CURINGSYSTEM</b> for more details and ideas of how to set these up.</p>
-			<p>The default tree scenario on serverside fires very early (2 afflictions) so you will want to adjust this with a custom scenario.</p>
-                        <p>A basic example of configuring a tree scenario:</p>
+                        <p>The serverside curing default tree scenario fires very early (2 afflictions) so you will want to adjust this with a custom scenario. You can read <b>HELP CURINGSYSTEM</b> for more details and ideas of how to set these up.</p>
+                        <p>Here is a basic example of configuring a tree scenario:</p>
 			<p><b>curing tree scenario new wsystreebasic</b><br>
 			   <b>curing tree scenario affcount wsystreebasic 4</b><br>
 			   <b>curing tree scenario enable wsystreebasic</b><br>
 			   <b>curing tree on custom</b>
 			</p>
-			<p>There are other scenarios that can be made, and enabled / disabled based on what you are fighting, research is key here!</p>
+			<p>There are other scenarios that can be made, and enabled / disabled based on what classes you are fighting, research is key here!</p>
                     </section>
                 </article>
             </div> <!-- #main -->
