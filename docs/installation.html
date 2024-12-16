@@ -83,6 +83,17 @@
                         <p>You can check the current defence priorities with the <b>wshow defprio</b> alias. You can then click on the - to reduce the priority (which moves it up, a little roundabout to think about) or the + to increase its defence priority value and move it down.</p>
                         <p>You can also manually move things around instead of hitting the + or - several times with the <b>wconfig defname #</b> alias.</p>
                     </section>
+		    <section>
+                        <h2><a name="serverTree">Serverside Tree Scenarios</a></h2>
+                        <p>The serverside curing default tree scenario fires very early (2 afflictions) so you will want to adjust this with a custom scenario. <b>CURING TREE SCENARIO</b> will display all of the commands to configure a scenario. You can read <b>HELP CURINGSYSTEM</b> under the advanced options section for more details on each command.</p>
+                        <p>Here is a basic example of configuring a tree scenario:</p>
+			<p><b>curing tree scenario new wsystreebasic</b><br>
+			   <b>curing tree scenario affcount wsystreebasic 4</b><br>
+			   <b>curing tree scenario enable wsystreebasic</b><br>
+			   <b>curing tree on custom</b>
+			</p>
+			<p>There are other scenarios that can be made, and enabled / disabled based on what classes you are fighting, research is key here!</p>
+                    </section>
                     <section>
                         <h2>Precaching</h2>
                         <p>To set what minerals or herbs you want to precache take a look at the <b>wshow precache</b> and select the amount you want to precache per mineral. You can also shorthand this by using wconfig, example: <b>wconfig precache bloodroot 5</b>. These will save to your Wundersys settings profile.</p>
@@ -92,17 +103,6 @@
                         <p>The Dofree queue allows you to queue up to 7 different actions that cost no balance and equilibrium, but require both. WunderSys does this by using the balance or equilibrium queues, which both get executed before the eqbal queue. So if you are off balance dofree will add the things to the balance queue, if you are off equilibrium it will add things to the equilibrium queue. It will default to the balance queue if you are on bal+eq or off bal+eq since balance usually recovers quicker than balance. You can trick the system into chaining more than 7 actions in dofree because I use serverside aliases for this, so just dofree("action 1/action2/action3/action 4") instead of using 4 dofrees. Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is NOT tied to the serverside separator in Achaea.</p>
                         <p>The Do queue will use the serverside eqbal queue to run the serverside do1 alias that I set up. Use this queue for stuff that costs either balance or equilibrium and requires both to start off with.</p>
                         <p>The Dorepeat queue will basically send the same action to the do queue over and over until you tell it to stop. Anything you send to the do queue while dorepeat is active will be done first. If you want to bash with dorepeat and there's several targets I advise using "kill &tar" as the dorepeat string and then using serverside targetting with settarget ⟨target⟩ so that you don't have to keep turning dorepeat on and off to set new targets.</p>
-                    </section>
-		    <section>
-                        <h2><a name="serverTree">Serverside Tree Scenarios</a></h2>
-                        <p>The serverside curing default tree scenario fires very early (2 afflictions) so you will want to adjust this with a custom scenario. You can read <b>HELP CURINGSYSTEM</b> for more details and ideas of how to set these up.</p>
-                        <p>Here is a basic example of configuring a tree scenario:</p>
-			<p><b>curing tree scenario new wsystreebasic</b><br>
-			   <b>curing tree scenario affcount wsystreebasic 4</b><br>
-			   <b>curing tree scenario enable wsystreebasic</b><br>
-			   <b>curing tree on custom</b>
-			</p>
-			<p>There are other scenarios that can be made, and enabled / disabled based on what classes you are fighting, research is key here!</p>
                     </section>
                 </article>
             </div> <!-- #main -->
