@@ -79,7 +79,7 @@ table tr:hover{background-color:#C9C9C9}
 @media only screen and (min-width: 480px) {
 
 /* INTERMEDIATE: Menu */
-    nav a {float: left; width: 18%; margin: 0 1.7%; padding: 25px 2%; margin-bottom: 0;background: #222;}
+    nav a {float: left; width: 18%; margin: 0 1.7%; padding: 25px 2%; margin-bottom: 0;background: #222;-webkit-transition: background-color 500ms ease; -moz-transition: background-color 500ms ease;-o-transition: background-color 500ms ease; transition: background-color 500ms ease;}
     nav li:first-child a {margin-left: 0; }
     nav li:last-child a {margin-right: 0; }
 /*  INTERMEDIATE: IE Fixes */
