@@ -41,6 +41,21 @@
                         <p>List of changes through the lifetime of WunderSys. Enjoy!</p>
                     </header>
                    <section>
+			<h1>2.1.2</h1>
+			<ul class="changeLogList">
+			    <li>Fixed: The touch shield alias now clears dor queue and queues touch shield.</li>
+			    <li>Fixed: Split wsys.return_defaultaffprios() and wsys.return_defaultAffPrioIgnores() out so they can be used in conjunction for a full reset. There are only so many characters that can be done in curing priority settings and I found that limit.</li>
+			    <li>Added: A setter from wconfig to serverside curing for configuration items: wconfig mosshealth / mossmana and wconfig siphealth / sipmana so you only have to set in one spot.</li>
+			    <li>Added: A sip reset when logging in.</li>
+			    <li>Adjusted: Adjusted the forced mosshealth and mossmana down. This is inline with the installation instructions.</li>
+			    <li>Fixed: Checks for updates. This now will give you back the box and a way to check for updates with the alias "wupdatecheck".</li>
+			</ul>
+			<h1>2.1.1</h1>
+			<ul class="changeLogList">
+			    <li>Fixed: Dor was not behaving as wanted. Corrected this.</li>
+			    <li>Updated: Added all of the afflictions into the wsys.return_defaultaffprios() to catch for anything that may come from other systems. This will move things that should be ignored to the 26 position.</li>
+			    <li>Added the alias wupdatedefaffprio to forcefully copy any updates to the wsys.return_defaultaffprios() script.</li>
+			</ul>
                         <h1>1.2/1.3 to 2.1 - Fendo</h1>
                         <a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Github Releases</a>
                         <ul class="changeLogList">
