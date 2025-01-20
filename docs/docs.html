@@ -117,6 +117,10 @@
                                     <td><b>mass {on|off}</b></td>
                                     <td>Toggles mass upkeep.</td>
                                 </tr>
+                                <tr class="list">
+                                    <td><b>keepshield {on|off}</b></td>
+                                    <td>Toggles shield upkeep.</td>
+                                </tr>
 				<tr class="list">
                                     <td><b>sl</b></td>
                                     <td>Toggles turns lyre mode on.</td>
@@ -280,6 +284,14 @@
                                 <tr class="list">
                                     <td><b>wconfig profile copyclass {source_class}</b></td>
                                     <td>Copy the settings from one class to your current class.</td>
+                                </tr>
+				<tr class="list">
+                                    <td><b>wconfig profile resetaffs all{| confirm}</b></td>
+                                    <td>Clears out all of the afflictions tied to all profiles. This helps if things get tangled up.</td>
+                                </tr>
+				<tr class="list">
+                                    <td><b>wconfig profile resetaffs {\w+} {\w+}</b></td>
+                                    <td>Clears out all of the afflictions tied to a profile. This helps if things get tangled up.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>swp {profile_name}</b></td>
@@ -458,6 +470,10 @@
                                     <td>Clears all actions from the dofreequeue table.</td>
                                 </tr>
                                 <tr class="list">
+                                    <td><b>wsys.doclear()</b></td>
+                                    <td>Clears all actions from the dofreequeue table.</td>
+                                </tr>
+                                <tr class="list">
                                     <td><b>wsys.doadd("action")</b></td>
                                     <td>Adds an action (as a string) to the do queue. Only use this for abilities that require equilibrium+balance and cost equilibrium or balance. You can chain a few commands if the first few in the chain don't cost balance/equilibrium. For example wsys.dofreeadd("g gold/put gold in pack/writhe")</td>
                                 </tr>
@@ -480,7 +496,7 @@
                             </tbody>
                         </table>
                     </section>
-		            <br/>
+		    <br/>
                     <section>
                         <h3>Defences</h3>
                         <table class="list">
