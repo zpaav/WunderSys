@@ -25,7 +25,7 @@
               </a>
                 <nav>
                     <ul>
-			            <li><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download</a></li>
+			<li><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download</a></li>
                         <li><a href="installation.html">Install</a></li>
                         <li><a href="docs.html">Docs</a></li>
                         <li><a href="help.html">Help</a></li>
@@ -41,6 +41,41 @@
                         <p>List of changes through the lifetime of WunderSys. Enjoy!</p>
                     </header>
                    <section>
+			<h1>2.1.5</h1>
+			<ul class="changeLogList">
+			    <li>Added: New Setting to match Serverside - fracturecurepercent</li>
+			    <li>Added: Added exits and exitsfull prompt tags to list exits.</li>
+			    <li>Added: Added in some active curing options. Most notable at the moment are wsys.classActiveHeal() and autoSlough and autoPurify as testers with new Wundersys setting autoactivecuring and autoactivecuringat. This is in testing and may bring out more options for healing.</li>
+			    <li>Added: Adjusted for the Horror curing swap in classlead 139.</li>
+			    <li>Added: Added in Earworm and Crescendo (my miss, my bad).</li>
+			    <li>Fixed: Did more work with GMCP number stacking showing in the Affliction lists. This should be better than it was.</li>
+			    <li>Fixed: Split out the functions for defaults info wsys.return_defaultaffprios(), wsys.return_defaultaffpriosStackables(), and wsys.return_defaultAffPrioIgnores(). Keeps from hitting the serverside setting cap.</li>
+			    <li>Fixed: Adjusted Dor to queue as a free vs eqbal.</li>
+			    <li>Reviewing: Still Working through Wundersys Settings to match / move over to Serverside settings for consistency sake.</li>
+			</ul>
+			<h1>2.1.4</h1>
+			<ul class="changeLogList">
+			    <li>Added: Resets for profiles being hung with old stuff to go along with serverside stuff.</li>>
+			    <li>Added: ^wconfig profile resetaffs? all(| confirm)?$</li>
+			    <li>Added: ^wconfig profile resetaffs? (\w+) (\w+)$</li>
+			    <li>Added: Autokeepup Shield Toggle - ^keepshield (on|off)$</li>
+			    <li>Added: Implemented the new Internalbleeding into the Default Aff Priorities</li>
+			    <li>Added: Added in spark and shaping counts for Fire and Earth Elemental Lords into prompt Tags</li>
+			    <li>Added: Added a wsys doqueue reset function to clear out the doqueue if it gets stuck - wsys.doclear()</li>
+			    <li>Added: Started ripping out old clientside affliction tracking.</li>
+			    <li>Added: Added the Diagnose gate to rely on the GMCP affliction list now.</li>
+			    <li>Added: Added in support for afflictions coming from GMCP that have numbers with them.</li>
+			    <li>Added: This should show on prompt or anything using wsys.aff. if the affliction has a number involved.</li>
+			    <li>Fixed: Gagging of priority swaps with afflictions that have numbers in the name.</li>
+			    <li>Reviewing: Class recognition triggers. There are a lot missing here.</li>
+			    <li>Reviewing: Looking over symptom triggers to see what can be better fixed up.</li>
+			    <li>Reviewing: Clientside affliction gained and lost triggers. These should generally match GMCP now as long as they're not hidden. That being the case they will be removed as I go through them.</li>
+			    <li>Reviewing: Started Looking over the priority swaps.</li>
+			</ul>
+			<h1>2.1.3</h1>
+			<ul class="changeLogList">
+			    <li>Added: Better defense notifications on what defences are active in wshow defup / keepup and under the "defs" alias list what uses mana.</li>
+			</ul>
 			<h1>2.1.2</h1>
 			<ul class="changeLogList">
 			    <li>Fixed: The touch shield alias now clears dor queue and queues touch shield.</li>
