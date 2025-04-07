@@ -1,4 +1,6 @@
-WunderSys: an Achaean ServerSide Curing System
-Originally developed by Nemutaur, Kept Up to date currently by Fendo.
+WunderSys: an Achaean serverside curing system.
+Originally developed by Nemutaur.
+Kept up to date currently by Fendo.
 
-Please refer to https://zpaav.github.io/WunderSys/ for the system details.
+Refer to the documentation here:
+https://zpaav.github.io/WunderSys/ 
