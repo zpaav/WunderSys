@@ -15,17 +15,17 @@
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-		<a href="index.html">
-		  <div class="heroLogo title">
-		    <i class="lCircle"></i>
-		    <i class="sCircle"></i>
-		    <i class="mCircle"></i>
-		    <h2>WunderSys</h2>
-		  </div>
-		</a>
+								<a href="index.html">
+								  <div class="heroLogo title">
+								    <i class="lCircle"></i>
+								    <i class="sCircle"></i>
+								    <i class="mCircle"></i>
+								    <h2>WunderSys</h2>
+								  </div>
+								</a>
                 <nav>
                     <ul>
-			<li><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download</a></li>
+												<li><a href="https://github.com/zpaav/WunderSys/releases" target="_blank">Download</a></li>
                         <li><a href="installation.html">Install</a></li>
                         <li><a href="docs.html">Docs</a></li>
                         <li><a href="help.html">Help</a></li>
@@ -40,7 +40,7 @@
                         <h1>Documentation.</h1>
                         <p>All of the Aliases and Functions for WunderSys.</p>
                     </header>
-		    <br/>
+		   							<br/>
                     <section>
                         <h2>System Aliases</h2>
                             <table class="list">
@@ -65,7 +65,7 @@
                                     <td><b>wconfig {setting} {value}</b></td>
                                     <td>Set a setting to a certain value</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wconfig lustlist {add|remove|clear} {name}</b></td>
                                     <td>Configure the lust allowlist with a name. Can add or remove a name, or clear the whole list.</td>
                                 </tr>
@@ -73,11 +73,11 @@
                                     <td><b>wsystem restore default</b></td>
                                     <td>Restore default settings in the system. Be careful, this deletes all saved settings.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wupdatedefaffprio</b></td>
-                                    <td>Apply updates to the wsys.return_defaultaffprios() script to your default affliction priorities.</td>
+                                    <td>Apply updates to the wsys.return_defaultaffprios() script to your default affliction priorities on serverside.<br/> You will want to run this in conjunction with <b>wconfig profile resetaffs all confirm</b> if updating default affs to update both serverside and wundersys profile settings afflictions. </td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wupdatecheck</b></td>
                                     <td>Checks if on the current version.</td>
                                 </tr>
@@ -121,11 +121,11 @@
                                     <td><b>keepshield {on|off}</b></td>
                                     <td>Toggles shield upkeep.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>sl</b></td>
                                     <td>Toggles turns lyre mode on.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>slo</b></td>
                                     <td>Toggles turns lyre mode off.</td>
                                 </tr>
@@ -164,7 +164,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>		
+		    						<br/>		
                     <section>
                         <h2>Manual Curing Aliases</h2>
                         <table class="list">
@@ -260,7 +260,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		   							<br/>
                     <section>
                         <h2>Profile Management</h2>
                         <table class="list">
@@ -285,13 +285,13 @@
                                     <td><b>wconfig profile copyclass {source_class}</b></td>
                                     <td>Copy the settings from one class to your current class.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wconfig profile resetaffs all{| confirm}</b></td>
-                                    <td>Clears out all of the afflictions tied to all profiles. This helps if things get tangled up.</td>
+																		<td>Resets affliction priorities tied to ALL profiles to what is set in functions <b>wsys.return_defaultaffprios()</b> and <b>wsys.return_defaultaffpriosStackables()</b>. This helps if things get tangled up.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wconfig profile resetaffs {\w+} {\w+}</b></td>
-                                    <td>Clears out all of the afflictions tied to a profile. This helps if things get tangled up.</td>
+                                    <td>Resets affliction priorities tied to a profile to what is set in functions <b>wsys.return_defaultaffprios()</b> and <b>wsys.return_defaultaffpriosStackables()</b>. This helps if things get tangled up.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>swp {profile_name}</b></td>
@@ -307,10 +307,10 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h2>Do, Dofree and Dorepeat Aliases</h2>
-			<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is due to the use of Achaea's serverside aliases. <b>HELP ALIASES</b> can provide more information. This is NOT tied to the config command separator in Achaea. </p>
+												<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is due to the use of Achaea's serverside aliases. <b>HELP ALIASES</b> can provide more information. This is NOT tied to the config command separator in Achaea. </p>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
@@ -332,14 +332,14 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <header>
                         <h2>Functions</h2>
-			<p>Note: Wundersys uses the wsys. namespace.</p>
+												<p>Note: Wundersys uses the wsys. namespace.</p>
                         </header>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h3>Pausing</h3>
                         <table>
@@ -371,7 +371,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h3>Sending Commands</h3>
                         <table class="list">
@@ -387,7 +387,7 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h3>Status Checks</h3>
                         <table class="list">
@@ -432,7 +432,7 @@
                                     <td><b>wsys.isDragon()</b></td>
                                     <td>Returns true if you're in Dragonform. Otherwise it returns false.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wsys.isElementalLord()</b></td>
                                     <td>Returns true if you're in Elemental Lord form. Otherwise it returns false.</td>
                                 </tr>
@@ -451,10 +451,10 @@
                             </tbody>
                         </table>
                     </section>
-		   <br/>
+		   							<br/>
                     <section>
                         <h3>Do, Dofree and Dorepeat</h3>
-			<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is NOT tied to the serverside separator in Achaea.</p>
+												<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is NOT tied to the serverside separator in Achaea.</p>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
@@ -489,14 +489,14 @@
                                     <td><b>wsys.dorclear()</b></td>
                                     <td>Clears the doreapeat action. This displays a dor cleared message.</td>
                                 </tr>
-				<tr class="list">
+																<tr class="list">
                                     <td><b>wsys.dorclearQuiet()</b></td>
                                     <td>Clears the doreapeat action. This will not display a message it cleared.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h3>Defences</h3>
                         <table class="list">
@@ -516,25 +516,31 @@
                             </tbody>
                         </table>
                     </section>
-		    <br/>
-		    <section>
+		    						<br/>
+		    						<section>
                         <h2>Customizing Affliction Priorities</h2>
                         <p>You can take a peek at the default Affliction Priorities if you look at the 'Affliction Priority Settings' script in the SETTINGS folder.</p>
                         <p>If you wish to mess about with the order I suggest moving that script outside and below the WunderSys script folder (below would be good to load after Wundersys). That way you won't lose your customized default affliction priority settings when you update Wundersys.</p>
-                        <p>The script contains three functions <b>wsys.return_defaultaffprios()</b>, <b>wsys.return_defaultaffpriosStackables()</b> and <b>wsys.return_defaultAffPrioIgnores()</b>. Edit the priorities in <b>wsys.return_defaultaffprios()</b> and save the script then run the alias <b>wupdatedefaffprio</b> to update the priorities on the wundersys and wundersys_default curingset priorities. You can also run the function <b>wsys.updateDefaultAffPrios()</b> but the alias should be sufficient.</p>
+                        <p>The script contains three functions <b>wsys.return_defaultaffprios()</b>, <b>wsys.return_defaultaffpriosStackables()</b> and <b>wsys.return_defaultAffPrioIgnores()</b>. Edit the priorities in <b>wsys.return_defaultaffprios()</b> and save the script.</p> 
+												<p>Next you will want to run the aliases:
+												  <ul>
+												    <li><b>wupdatedefaffprio</b> - this updates the priorities on the wundersys and wundersys_default curingset priorities. You can also run the function <b>wsys.updateDefaultAffPrios()</b> but the alias should be sufficient.</li>
+												    <li><b>wconfig profile resetaffs all confirm</b> - This will update all of the affliction settings in each profile in wundersys_settings.lua. Can run without "confirm" to get a glance on what is going to change first.</li>
+												  </ul>
+												</p>
                         <p>Like serverside curing the afflictions with the highest priority (1 through 25) are cured first. The first slot is left empty so that on the fly priority switching can prioritise certain afflictions in different situations. 26 will ignore an affliction or use "reset" to remove it.</p>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h2>Custom Prompt</h2>
                         <p>The custom prompt string is saved in the settings.prompt variable. You can see the current prompt string by checking <b>wshow display</b>. If you click on the prompt string (which is horribly long by default) it will be pasted into your input line so you can edit it.</p>
                         <p>You can set the custom prompt by using the <b>wconfig prompt {promptstring}</b>. For example <b>wconfig prompt @health @mana @willpower @endurance</b> would show you 6007 5339 25470 22200 or something similar. If you want to add text to that you simply add it to the end of a tag, so @healthh would change that 6007 to a 6007h. @percenthealth would show 100 if at full health, @percenthealth%h would show 100%h.</p>
-			<p>There is a secondary prompt that can be configured with <b>wconfig promptline2 {promptstring}</b> as well or false to disable.</p>
+												<p>There is a secondary prompt that can be configured with <b>wconfig promptline2 {promptstring}</b> as well or false to disable.</p>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h2>Prompt Tags:</h2>
-			<h4>More are being added over time as I work on this!</h4>
+												<h4>More are being added over time as I work on this!</h4>
                         <ul class="promptList">
                             <li><b>@health</b>: current health.</li>
                             <li><b>@percenthealth</b>: current health in percent.</li>
@@ -547,8 +553,8 @@
                             <li><b>@bal</b>: shows X for balance, default prompt uses @bal@bal</li>
                             <li><b>@eq</b>: shows E for equilibrium, defailt prompt uses @eq@eq</li>
                             <li><b>@target</b>: echos contents of the 'target' variable.</li>
-			    <li><b>@exits</b>: Displays room exits short name.</li>
-			    <li><b>@exitsfull</b>: Displays room exits long name.</li>
+			    									<li><b>@exits</b>: Displays room exits short name.</li>
+			    									<li><b>@exitsfull</b>: Displays room exits long name.</li>
                             <li><b>@paused</b>: shows (PP) if paused.</li>
                             <li><b>@softpaused</b>: shows (sP) if softpaused.</li>
                             <li><b>@phase</b>: shows "@" if phased, blackwinded or astralformed.</li>
@@ -563,7 +569,7 @@
                             <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up.</li>
                             <li><b>@warning</b>: shows the warnings (behead, breathrain etc.).</li>
                             <li><b>@affs</b>: displays the prompt aff tags.</li>
-			    <li><b>@slc</b>: Self Limb Counter Display.</li>
+			    									<li><b>@slc</b>: Self Limb Counter Display.</li>
                             <li><b>@xp</b>: shows current % experience into the next level.</li>
                             <li><b>@npchp</b>: shows current NPC health percent if targetting an NPC.</li>
                             <li><b>@rage</b>: shows current battlerage.</li>
@@ -593,11 +599,11 @@
                             <li><b>@empower</b>: returns current empower. (runewarden)</li>
                             <li><b>@venom</b>: returns current venom. (serpent)</li>
                             <li><b>@spirits</b>: returns current spirits. (shaman)</li>
-			    <li><b>@spark</b>: returns current spark count. (fire elemental)</li>
-			    <li><b>@shaping</b>: returns current shaping count. (earth elemental)</li>
+			    									<li><b>@spark</b>: returns current spark count. (fire elemental)</li>
+			    									<li><b>@shaping</b>: returns current shaping count. (earth elemental)</li>
                         </ul>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h2>Prompt Color Tags:</h2>
                         <ul class="promptList">
@@ -608,12 +614,12 @@
                             <li><b>#(colour)</b>: any color you can find in mudlet as long as it has no _ in it, so SlateGrey works, but not slate_grey. Might get that working in a future update.</li>
                         </ul>
                     </section>
-		    <br/>
+		    						<br/>
                     <section>
                         <h2>Custom Reporting Echoes</h2>
                         <p>You can overwrite and customize the wundersys.report() function and other reporting functions under the folder INTERNALS Highlights script by copying the function(s) outside of Wundersys (place it below Wundersys) then edit how you see fit.</p>
                     </section>
-		   <br/>
+		   							<br/>
                 </article>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
