@@ -2,6 +2,12 @@
 Originally developed by Nemutaur.  
 Kept up to date currently by Fendo.  
 
+### To Get Started:
+Download the WundersysX.X .mpackage File above and then follow the [installation instructions](https://zpaav.github.io/WunderSys/installation.html).
+
+Can also download the current .mpackage file from the [releases](https://github.com/zpaav/WunderSys/releases/tag/v2.1.9) at the bottom.
+
+
 ### Documentation
 Refer to the documentation [here](https://zpaav.github.io/WunderSys/).  
 
