@@ -18,7 +18,7 @@ https://zpaav.github.io/WunderSys/
 - FoxHunt - Wundersys and Orion Hunting Script.
 - NDB - Named Database. Uses "endeeb." as the namespace.
 - KaiAchGui - Just a gui that works with Wundersys. Very static.
-- AK8.6.2 - Slightly updated affliction tracking package that was taken from the AK8.6 by Austere located [here](https://www.dropbox.com/scl/fo/04ci9tq4rivks1r4oar37/AM84yKTcPYYyWXa0pt0_lNA/AK%208.6?rlkey=kyu53u5f96w5ra05xkkvujd3d&e=1&subfolder_nav_tracking=1&dl=0).
+- AK8.6.2 - Slightly updated affliction tracking package that was taken from the AK8.6 by Austere located [here](https://www.dropbox.com/scl/fo/04ci9tq4rivks1r4oar37/ABxzEVpvvrBvjv9V4IYc2s0?rlkey=kyu53u5f96w5ra05xkkvujd3d&e=2&dl=0).
 - Limb1.4 - Limb Counter. Simple. 
 
 #### Other Scripts to Look to
