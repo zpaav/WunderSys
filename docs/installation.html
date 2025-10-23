@@ -46,20 +46,20 @@
                         <p>Lastly enable GMCP in your Mudlet Settings.</p>
                         <p>Download the .mpackage file of WunderSys.</p>
                         <p>Once the WunderSys .mpackage is installed, restart mudlet and when you are logged back in check the settings <b>wshow settings</b> and configure your settings such as:
-			   <ul>
-				<li>Use Transmutation (true) or Herb cures (false): <b>wconfig usetransmutation {true|false}</b></li>
-				<li>Pipes: <b>wconfig (valerianpipe|elmpipe|skullcappipe) {number}</b>.</p></li>
-				<li>Sip Health (match this to what you set on the CURING setup: <b>wconfig siphealth #</b></li>
-				<li>Sip Mana (match this to what you set on the CURING setup: <b>wconfig sipmana #</b></li>
-				<li>Use Moss: <b>wconfig usemoss {true|false}</b></li>
-				<li>Moss Health (match this to what you set on the CURING setup: <b>wconfig mosshealth #</b></li>
-				<li>Moss Mana (match this to what you set on the CURING setup: <b>wconfig mossmana #</b></li>
-				<li>Use Focus: <b>wconfig usefocus {true|false}</b></li>
-				<li>Use Auto Tree: <b>wconfig autotree {true|false}</b> - Configures the serverside autotree usage.<br>Please read the <a href="installation.html#serverTree">Serverside Tree Scenarios</a> section for details.</li>
-				<li>Use Clot: <b>wconfig useclot {true|false}</b></li>
-				<li>Use Rage (knight classes only): <b>wconfig userage {true|false}</b></li>
-				<li>Elemental Lord Class: <b>wconfig elementallord {firelord|earthlord|airlord|waterlord}</b></li>
-			   </ul>
+						   <ul>
+							<li>Use Transmutation (true) or Herb cures (false): <b>wconfig usetransmutation {true|false}</b></li>
+							<li>Pipes: <b>wconfig (valerianpipe|elmpipe|skullcappipe) {number}</b>. Be sure to match this to whatever serverside is doing as this can cause headaches otherwise.</p></li>
+							<li>Sip Health (match this to what you set on the CURING setup: <b>wconfig siphealth #</b></li>
+							<li>Sip Mana (match this to what you set on the CURING setup: <b>wconfig sipmana #</b></li>
+							<li>Use Moss: <b>wconfig usemoss {true|false}</b></li>
+							<li>Moss Health (match this to what you set on the CURING setup: <b>wconfig mosshealth #</b></li>
+							<li>Moss Mana (match this to what you set on the CURING setup: <b>wconfig mossmana #</b></li>
+							<li>Use Focus: <b>wconfig usefocus {true|false}</b></li>
+							<li>Use Auto Tree: <b>wconfig autotree {true|false}</b> - Configures the serverside autotree usage. This is defaulted false as clientside tree scenarios are in place now. Read <a href="installation.html#clientTree">Clientside Tree Scenarios</a> for options. <br>Please read the <a href="installation.html#serverTree">Serverside Tree Scenarios</a> section for details if you would rather use serverside tree scenarios.</li>
+							<li>Use Clot: <b>wconfig useclot {true|false}</b></li>
+							<li>Use Rage (knight classes only): <b>wconfig userage {true|false}</b></li>
+							<li>Elemental Lord Class: <b>wconfig elementallord {firelord|earthlord|airlord|waterlord}</b></li>
+						   </ul>
                     </header>
                     <section>
                         <a name="updating"><h2>Updating WunderSys</h2></a>
@@ -71,6 +71,56 @@
                         <h2>Affliction Priorities</h2>
                         <p>You can take a peek at the default Affliction Priorities if you look for the 'Affliction Priority Settings' script in the SETTINGS folder. If you wish to mess about with the order I suggest moving that script outside and below the WunderSys script folder (just below would be good). That way you won't lose your default Affliction Priority settings when you update something.</p>
                         <p>Like serverside curing the afflictions with the highest priority (1 through 25) are cured first. The first slot is left empty so that on the fly priority switching can prioritise certain afflictions in different situations.</p>
+                        <p>To set an affliction priority on the fly the alias <b>wconfig affprio (\w+) (\d+)</b> can be used.</p>
+                        <h2>Customizing Affliction Priority Swaps</h2>
+                        <p>There are four priority swap queues that are used for this primarily. 
+                            - Afflictions gained.
+                            - Afflictions lost.
+                            - Class timers started.
+                            - Class timers ended.
+                        These afflictions queues should be mostly used, these and a couple others are located in the Prio Switching Folder to review.
+                        </p>
+                        <h3>To set your own priority swaps on afflictions gained:</h3>
+                        <p>
+                        - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapaffgained' as an example. 
+                        - Please name it without with a name without special characters (please, please, please).
+                        - Set the wundersys prioswapaffgained setting with your function name.
+                        - <b>wconfig prioswapaffgained <functionname> </b>
+                        - Base prioswapaffgained setting example: wconfig prioswapaffgained wsysbasepriorityswapaffgained
+                        </p>
+                        <h3>To set your own priority swaps on afflictions lost:</h3>
+                        <p>
+                        - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapafflost' as an example.  
+                        - Please name it without with a name without special characters (please, please, please).
+                        - Set the wundersys prioswapafflost setting with your function name.
+                        - <b>wconfig prioswapafflost <functionname> </b>
+                        - Base prioswapafflost setting example: wconfig prioswapafflost wsysbasepriorityswapafflost
+                        </p>
+                        <h3>To set your own priority swaps on class timers started:</h3>
+                        <p>
+                        - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapclasstimerstarted' as an example. 
+                        - Please name it without with a name without special characters (please, please, please).
+                        - Set the wundersys prioswapclasstimerstart setting with your function name.
+                        - <b>wconfig prioswapclasstimerstart <functionname> </b>
+                        - Base prioswapclasstimerstart setting example: wconfig prioswapclasstimerstart wsysbasepriorityswapclasstimerstarted
+                        </p>
+                        <h3>To set your own priority swaps on class timers ended:</h3>
+                        <p>
+                        - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapclasstimerended' as an example. 
+                        - Please name it without with a name without special characters (please, please, please).
+                        - Set the wundersys prioswapclasstimerend setting with your function name.
+                        - <b>wconfig prioswapclasstimerend <functionname> </b>
+                        - Base prioswapclasstimerend setting example: wconfig prioswapclasstimerend wsysbasepriorityswapclasstimerended
+                        </p>
+                        <h2>Customizing the Lockqueue</h2>
+                        <p>This is the start of extending lockqueues so you can set various queues on the fly if needed. Giving more options.</p>
+                        <p><b>To set your own:</b>
+                        - Create a function script outside of Wundersys of your own function using function 'wsysbaselockqueue' as an example. 
+                        - Please name it without with a name without special characters (please, please, please).
+                        - Set the wundersys lockqueue setting with your function name.
+                        - <b>wconfig lockqueue <functionname> </b>
+                        - Base lockqueue setting example: wconfig lockqueue wsysbaselockqueue
+                        </p>
                     </section>
                     <section>
                         <h2>Defence Management</h2>
@@ -84,16 +134,31 @@
                         <p>You can check the current defence priorities with the <b>wshow defprio</b> alias. You can then click on the - to reduce the priority (which moves it up, a little roundabout to think about) or the + to increase its defence priority value and move it down.</p>
                         <p>You can also manually move things around instead of hitting the + or - several times with the <b>wconfig defname #</b> alias.</p>
                     </section>
-		    <section>
-                        <h2><a name="serverTree">Serverside Tree Scenarios</a></h2>
-                        <p>The serverside curing default tree scenario fires very early (2 afflictions) so you will want to adjust this with a custom scenario. <b>CURING TREE SCENARIO</b> will display all of the commands to configure a scenario. You can read <b>HELP CURINGSYSTEM</b> under the advanced options section for more details on each command.</p>
-                        <p>Here is a basic example of configuring a tree scenario:</p>
-			<p><b>curing tree scenario new wsystreebasic</b><br>
-			   <b>curing tree scenario affcount wsystreebasic 3</b><br>
-			   <b>curing tree scenario enable wsystreebasic</b><br>
-			   <b>curing tree on custom</b>
-			</p>
-			<p>There are other scenarios that can be made, and enabled / disabled based on what classes you are fighting, research is key here!</p>
+		    		<section>
+						<h2><a name="clientTree">Clientside Tree Scenarios</a></h2>
+						<p>This is the start of extending treequeues so you can set various queues on the fly if needed. Giving fun options!</p>
+						<p>IMPORTANT NOTE: You want to choose this or using AutoTree. Don't do both as collisions will drive you nuts.</p>
+						<p><b>To set your own Tree queue:</b>
+						- Create a function script outside of Wundersys with your own function name using what is already in Tree Queue as an example - Lookup function wsysbasetreequeue() as the base example. 
+						- Please name it without with a name without special characters (please, please, please).
+						- Adjust this function with your own scenarios.
+						- Set the wundersys treequeue setting with your function name.
+						- wconfig treequeue <functionname>
+						- Base treequeue setting example: wconfig treequeue wsysbasetreequeue
+						- If you want to rely on this shut autotree off so serverside doesn't collide.
+						- To do this run either aliases <b>atr off</b> or <b>wconfig autotree false</b> or in Mudlet run the function <b>lua wsys.autoTreeOff()</b>. So many options to toggle this off. 
+						- Have fun editing!
+						</p>
+						<h2><a name="serverTree">Serverside Tree Scenarios</a></h2>
+						<p>IMPORTANT NOTE: You want to choose this or using Clientside Tree. Don't do both as collisions will drive you nuts.</p>
+						<p>The serverside curing default tree scenario fires very early (2 afflictions) so you will want to adjust this with a custom scenario. <b>CURING TREE SCENARIO</b> will display all of the commands to configure a scenario. You can read <b>HELP CURINGSYSTEM</b> under the advanced options section for more details on each command.</p>
+						<p>Here is a basic example of configuring a tree scenario:</p>
+						<p><b>curing tree scenario new wsystreebasic</b><br>
+						    <b>curing tree scenario affcount wsystreebasic 3</b><br>
+						    <b>curing tree scenario enable wsystreebasic</b><br>
+						    <b>curing tree on custom</b>
+						</p>
+						<p>There are other scenarios that can be made, and enabled / disabled based on what classes you are fighting, research is key here!</p>
                     </section>
                     <section>
                         <h2>Precaching</h2>
