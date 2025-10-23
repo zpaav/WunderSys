@@ -67,7 +67,7 @@
                         <p>Use the Package Manager to remove your current WunderSys installation. If you want to keep your default Affliction Priority order please move the 'Affliction Priority Settings' script out of the SETTINGS folder and below of your WunderSys script folder.</p>
                         <p>Using the same Package Manager install the new WunderSys .mpackage file and then restart mudlet.</p>
                     </section>
-                                        <section>
+                    <section>
                         <h2>Affliction Priorities</h2>
                         <p>You can take a peek at the default Affliction Priorities if you look for the 'Affliction Priority Settings' script in the SETTINGS folder. If you wish to mess about with the order I suggest moving that script outside and below the WunderSys script folder (just below would be good). That way you won't lose your default Affliction Priority settings when you update something.</p>
                         <p>Like serverside curing the afflictions with the highest priority (1 through 25) are cured first. The first slot is left empty so that on the fly priority switching can prioritise certain afflictions in different situations.</p>
@@ -85,32 +85,32 @@
                         - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapaffgained' as an example. <br>
                         - Please name it without with a name without special characters (please, please, please).<br>
                         - Set the wundersys prioswapaffgained setting with your function name.<br>
-                        - <b>wconfig prioswapaffgained <functionname> </b><br>
-                        - Base prioswapaffgained setting example: wconfig prioswapaffgained wsysbasepriorityswapaffgained<br>
+                        - <b>wconfig prioswapaffgained {functionname}</b><br>
+                        - Base prioswapaffgained setting example: <b>wconfig prioswapaffgained wsysbasepriorityswapaffgained</b><br>
                         </p>
                         <h3>To set your own priority swaps on afflictions lost:</h3>
                         <p>
                         - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapafflost' as an example.  <br>
                         - Please name it without with a name without special characters (please, please, please).<br>
                         - Set the wundersys prioswapafflost setting with your function name.<br>
-                        - <b>wconfig prioswapafflost <functionname> </b><br>
-                        - Base prioswapafflost setting example: wconfig prioswapafflost wsysbasepriorityswapafflost<br>
+                        - <b>wconfig prioswapafflost {functionname}</b><br>
+                        - Base prioswapafflost setting example: <b>wconfig prioswapafflost wsysbasepriorityswapafflost</b><br>
                         </p>
                         <h3>To set your own priority swaps on class timers started:</h3>
                         <p>
                         - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapclasstimerstarted' as an example. <br>
                         - Please name it without with a name without special characters (please, please, please).<br>
                         - Set the wundersys prioswapclasstimerstart setting with your function name.<br>
-                        - <b>wconfig prioswapclasstimerstart <functionname> </b><br>
-                        - Base prioswapclasstimerstart setting example: wconfig prioswapclasstimerstart wsysbasepriorityswapclasstimerstarted<br>
+                        - <b>wconfig prioswapclasstimerstart {functionname}</b><br>
+                        - Base prioswapclasstimerstart setting example: <b>wconfig prioswapclasstimerstart wsysbasepriorityswapclasstimerstarted</b><br>
                         </p>
                         <h3>To set your own priority swaps on class timers ended:</h3>
                         <p>
                         - Create a function script outside of Wundersys of your own function using function 'wsysbasepriorityswapclasstimerended' as an example. <br>
                         - Please name it without with a name without special characters (please, please, please).<br>
                         - Set the wundersys prioswapclasstimerend setting with your function name.<br>
-                        - <b>wconfig prioswapclasstimerend <functionname> </b><br>
-                        - Base prioswapclasstimerend setting example: wconfig prioswapclasstimerend wsysbasepriorityswapclasstimerended<br>
+                        - <b>wconfig prioswapclasstimerend {functionname}</b><br>
+                        - Base prioswapclasstimerend setting example: <b>wconfig prioswapclasstimerend wsysbasepriorityswapclasstimerended</b><br>
                         </p>
                         <h2>Customizing the Lockqueue </h2>
                         <p>This is the start of extending lockqueues so you can set various queues on the fly if needed. Giving more options.</p>
@@ -118,8 +118,8 @@
                         - Create a function script outside of Wundersys of your own function using function 'wsysbaselockqueue' as an example. <br>
                         - Please name it without with a name without special characters (please, please, please).<br>
                         - Set the wundersys lockqueue setting with your function name.<br>
-                        - <b>wconfig lockqueue <functionname> </b><br>
-                        - Base lockqueue setting example: wconfig lockqueue wsysbaselockqueue<br>
+                        - <b>wconfig lockqueue {functionname} </b><br>
+                        - Base lockqueue setting example: <b>wconfig lockqueue wsysbaselockqueue</b><br>
                         </p>
                     </section>
                     <section>
@@ -143,8 +143,8 @@
 						- Please name it without with a name without special characters (please, please, please).<br>
 						- Adjust this function with your own scenarios.<br>
 						- Set the wundersys treequeue setting with your function name.<br>
-						- wconfig treequeue <functionname><br>
-						- Base treequeue setting example: wconfig treequeue wsysbasetreequeue<br>
+						- <b>wconfig treequeue {functionname}</b> <br>
+						- Base treequeue setting example: <b>wconfig treequeue wsysbasetreequeue</b><br>
 						- If you want to rely on this shut autotree off so serverside doesn't collide.<br>
 						- To do this run either aliases <b>atr off</b> or <b>wconfig autotree false</b> or in Mudlet run the function <b>lua wsys.autoTreeOff()</b>. So many options to toggle this off. <br>
 						- Have fun editing!<br>
@@ -160,7 +160,7 @@
 						    <b>curing tree on custom</b><br>
 						</p>
 						<p>There are other scenarios that can be made, and enabled / disabled based on what classes you are fighting, research is key here!</p>
-						                    </section>
+					</section>
                     <section>
                         <h2>Precaching</h2>
                         <p>To set what minerals or herbs you want to precache take a look at the <b>wshow precache</b> and select the amount you want to precache per mineral. You can also shorthand this by using wconfig, example: <b>wconfig precache bloodroot 5</b>. These will save to your Wundersys settings profile.</p>
