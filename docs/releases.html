@@ -43,7 +43,7 @@
                    <section>
 			    <h1>2.1.10</h1>
     <p>Note: Please run the "wupdatedefaffprio" and "wconfig profile resetaffs all confirm" aliases after installing this update as there are updates to the aff priorities.</p>
-    <ul>
+   	<ul class="changeLogList">
         <li>Added: Added in the fractricide affliction.</li>
         <li>Added: Added in the icebound affliction.</li>
         <li>Added: Added the rainbow colours as a misc script. wsys.rainbow(str, type, freq) is the function.</li>
@@ -59,14 +59,14 @@
         <li>Fixed: Fixed Dragon Race detection. Missed the namespacing.</li>
     </ul>
     <h1>2.1.9</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: New config to set what type of elemental lord you are wconfig elementallord (firelord,airlord,earthlord,waterlord). This is only needed once.</li>
         <li>Added:  More adjustments to defenses and what is handled by serverside vs not.</li>
         <li>Fixed: Fixed Defenses when logging in/out as an Elemental Lord. GMCP not picking up correctly so there's a workaround.</li>
         <li>Working on: Always looking to add priority swaps as needed.</li>
     <ul>
     <h1>2.1.8</h1>
-    <ul>
+   <ul class="changeLogList">
         <li>Added: More priority swaps.</li>
         <li>Added: Made the settings easier to look at.</li>
         <li>Added: Added ch alias for class active heals.</li>
@@ -88,7 +88,7 @@
         <li>Working on: Always looking to add priority swaps as needed.</li>
     </ul>
     <h1>2.1.7</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: Additional mount checks.</li>
         <li>Added: Airpocket defense.</li>
         <li>Added: Incandescence warning.</li>
@@ -102,7 +102,7 @@
         <li>Working on: Always looking to add priority swaps as needed.</li>
     </ul>
     <h1>2.1.6</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: New priority for mana use incase fighting certain classes.</li>
         <li>Added: New Self Limb Counter.</li>
         <li>Added: More options for Kaido Transmute. This is a precursor to working it into serverside.</li>
@@ -113,7 +113,7 @@
         <li>Fixed: Should show the wundersys_settings.lua affliction priority settings properly now.</li>
     </ul>
     <h1>2.1.5</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: New Setting to match Serverside - fracturecurepercent</li>
         <li>Added: Added exits and exitsfull prompt tags to list exits.</li>
         <li>Added: Added in some active curing options. Most notable at the moment are wsys.classActiveHeal() and autoSlough and autoPurify as testers with new Wundersys setting autoactivecuring and autoactivecuringat. This is in testing and may bring out more options for healing.</li>
@@ -125,7 +125,7 @@
         <li>Reviewing: Still Working through Wundersys settings to match / move over to serverside settings for consistency sake.</li>
     </ul>
     <h1>2.1.4</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: Resets for profiles being hung with old stuff to go along with serverside stuff.</li>
         <li>Added: ^wconfig profile resetaffs? all(| confirm)?$</li>
         <li>Added: ^wconfig profile resetaffs? (\w+) (\w+)$</li>
@@ -144,11 +144,11 @@
         <li>Reviewing: Started Looking over the priority swaps.</li>
     </ul>
     <h1>2.1.3</h1>
-    <ul>
+   <ul class="changeLogList">
         <li>Added: Better defense notifications on what defenses are active in wshow defup / keepup and under the "defs" alias list what uses mana.</li>
     </ul>
     <h1>2.1.2</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: A setter from wconfig to serverside curing for configuration items: wconfig mosshealth / mossmana and wconfig siphealth / sipmana so you only have to set in one spot.</li>
         <li>Added: A sip reset when logging in.</li>
         <li>Fixed: The touch shield alias now clears dor queue and queues touch shield.</li>
@@ -157,13 +157,13 @@
         <li>Fixed: Adjusted the forced mosshealth and mossmana down. This is inline with the installation instructions.</li>
     </ul>
     <h1>2.1.1</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Added: Alias wupdatedefaffprio to forcefully copy any updates to the wsys.return_defaultaffprios() script.</li>
         <li>Fixed: Dor was not behaving as wanted. Corrected this.</li>
         <li>Updated: Added all of the afflictions into the wsys.return_defaultaffprios() to catch for anything that may come from other systems. This will move things that should be ignored to the 26 position.</li>
     </ul>
     <h1>2.1</h1>
-    <ul>
+    <ul class="changeLogList">
         <li>Many changes - this is mostly to get updates that I was missing from around version 1.2/1.3.</li>
         <li>Added: Additional Prompt Values added in. Reference the documentation for these details and the entire list of tags.</li>
         <li>Added: Tracking and handling for many new afflictions that came out with new classes and elemental lord forms.</li>
