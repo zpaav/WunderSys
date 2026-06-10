@@ -3,16 +3,16 @@ Originally developed by Nemutaur.
 Kept up to date currently by Fendo.  
 
 ### To Get Started:
-Download the WundersysX.X.X(.X|) .mpackage File above and then follow the [installation instructions](https://zpaav.github.io/WunderSys/installation.html).
+Download the WundersysX.X.X(.X|) .mpackage File above and then follow the [installation instructions](https://wundersys-mudlet.github.io/WunderSys/installation.html).
 
-Can also download the current .mpackage file from the [releases](https://github.com/zpaav/WunderSys/releases/tag/v2.1.9) at the bottom.
+Can also download the current .mpackage file from the [releases](https://github.com/Wundersys-Mudlet/WunderSys/releases/) at the bottom.
 
 
 ### Documentation
-Refer to the documentation [here](https://zpaav.github.io/WunderSys/).  
+Refer to the documentation [here](https://wundersys-mudlet.github.io/WunderSys/).  
 
 Or just go to the following site:  
-https://zpaav.github.io/WunderSys/ 
+https://wundersys-mudlet.github.io/WunderSys/ 
 
 #### Additional Helper Scripts located here:
 - FoxHunt - Wundersys and Orion Hunting Script.
