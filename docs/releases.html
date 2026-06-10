@@ -41,6 +41,142 @@
                         <p>List of changes through the lifetime of WunderSys. Enjoy!</p>
                     </header>
                    <section>
+			    <h1>2.1.10</h1>
+    <p>Note: Please run the "wupdatedefaffprio" and "wconfig profile resetaffs all confirm" aliases after installing this update as there are updates to the aff priorities.</p>
+    <ul>
+        <li>Added: Added in the fractricide affliction.</li>
+        <li>Added: Added in the icebound affliction.</li>
+        <li>Added: Added the rainbow colours as a misc script. wsys.rainbow(str, type, freq) is the function.</li>
+        <li>Added: Added a rift item checker misc script. wsys.checkRiftForItem(item) is the function.</li>
+        <li>Added: Added option tables to SLC and the Parry strategies. Will make it easier to add options later.</li>
+        <li>Added: Implemented Psion Curing priorities.</li>
+        <li>Added: Implemented a PrioAff setting for serverside. We'll see how this goes. This is used in the Psion priorities.</li>
+        <li>Fixed: Fixed wconfig for some serverside commands.</li>
+        <li>Working on: Reviewing Pipe Management. May be able to drop this off as it's fully serverside handled now. Just need to test webbed and broken arms.</li>
+    </ul>
+    <h1>2.1.9.1</h1>
+    <ul>
+        <li>Fixed: Fixed Dragon Race detection. Missed the namespacing.</li>
+    </ul>
+    <h1>2.1.9</h1>
+    <ul>
+        <li>Added: New config to set what type of elemental lord you are wconfig elementallord (firelord,airlord,earthlord,waterlord). This is only needed once.</li>
+        <li>Added:  More adjustments to defenses and what is handled by serverside vs not.</li>
+        <li>Fixed: Fixed Defenses when logging in/out as an Elemental Lord. GMCP not picking up correctly so there's a workaround.</li>
+        <li>Working on: Always looking to add priority swaps as needed.</li>
+    <ul>
+    <h1>2.1.8</h1>
+    <ul>
+        <li>Added: More priority swaps.</li>
+        <li>Added: Made the settings easier to look at.</li>
+        <li>Added: Added ch alias for class active heals.</li>
+        <li>Added: Added settings in for SLC and parrystrategies.</li>
+        <li>Added: Added some reflexes for lyre and shield breaking.</li>
+        <li>Added: Added a couple of new warnings.</li>
+        <li>Fixed: Fixed pressure tracking to follow GMCP.</li>
+        <li>Removed: Removed old self limb counter.</li>
+        <li>Working on: Still Working through Wundersys Settings to match / move over to serverside settings for consistency sake. This is mostly down to Kaido Transmute and the Rejection List stuff to see how I want to deal with it since Wundersys has something working already.</li>
+        <li>Working on: Working through affliction notifications and how I want to work with those since serverside does provide another way to tell me we're afflicted when. Not sure how I want to work through this but definitely don't like the doubling up notifications I have going on right now.</li>
+        <li>Working on: Always looking to add priority swaps as needed.</li>
+    <ul>
+    <h1>2.1.7.1</h1>
+    <ul>
+        <li>Fixed: Adjusting some affliction priority baselines.</li>
+        <li>Fixed: Fixed an issue with echoes behaving weird on curing and afflictions delivered.</li>
+        <li>Working on: Still Working through Wundersys Settings to match / move over to serverside settings for consistency sake. This is mostly down to Kaido Transmute and the Rejection List stuff to see how I want to deal with it since Wundersys has something working already.</li>
+        <li>Working on: Working through affliction notifications and how I want to work with those since serverside does provide another way to tell me we're afflicted when. Not sure how I want to work through this but definitely don't like the doubling up notifications I have going on right now.</li>
+        <li>Working on: Always looking to add priority swaps as needed.</li>
+    </ul>
+    <h1>2.1.7</h1>
+    <ul>
+        <li>Added: Additional mount checks.</li>
+        <li>Added: Airpocket defense.</li>
+        <li>Added: Incandescence warning.</li>
+        <li>Added: Chrono doom warning.</li>
+        <li>Added: Added some parry strategies.</li>
+        <li>Removed: Cleaned up old limb counter code and triggers.</li>
+        <li>Removed: Cleaned up old affliction code.</li>
+        <li>Removed: Cleaned up old diagnose code and triggers. Using GMCP fully for this.</li>
+        <li>Working on: Still Working through Wundersys Settings to match / move over to serverside settings for consistency sake. This is mostly down to Kaido Transmute and the Rejection List stuff to see how I want to deal with it since Wundersys has something working already.</li>
+        <li>Working on: Working through affliction notifications and how I want to work with those since serverside does provide another way to tell me we're afflicted when. Not sure how I want to work through this but definitely don't like the doubling up notifications I have going on right now.</li>
+        <li>Working on: Always looking to add priority swaps as needed.</li>
+    </ul>
+    <h1>2.1.6</h1>
+    <ul>
+        <li>Added: New priority for mana use incase fighting certain classes.</li>
+        <li>Added: New Self Limb Counter.</li>
+        <li>Added: More options for Kaido Transmute. This is a precursor to working it into serverside.</li>
+        <li>Added: Updated Class Timers into their own Folders. These are newer so they have opportunity to be improved further.</li>
+        <li>Fixed: More Priority Default Reset functions were corrected.</li>
+        <li>Fixed: Priorities around burning were not behaving well with tree on serverside. Have a workaround in place for now.</li>
+        <li>Fixed: Getting settings in the wundersys_settings.lua in sync with the split priority default functions.</li>
+        <li>Fixed: Should show the wundersys_settings.lua affliction priority settings properly now.</li>
+    </ul>
+    <h1>2.1.5</h1>
+    <ul>
+        <li>Added: New Setting to match Serverside - fracturecurepercent</li>
+        <li>Added: Added exits and exitsfull prompt tags to list exits.</li>
+        <li>Added: Added in some active curing options. Most notable at the moment are wsys.classActiveHeal() and autoSlough and autoPurify as testers with new Wundersys setting autoactivecuring and autoactivecuringat. This is in testing and may bring out more options for healing.</li>
+        <li>Added: Adjusted for the Horror curing swap in classlead 139.</li>
+        <li>Added: Added in Earworm and Crescendo (my miss, my bad).</li>
+        <li>Fixed: Did more work with GMCP number stacking showing in the Affliction lists. This should be better than it was.</li>
+        <li>Fixed: Split out the functions for defaults info wsys.return_defaultaffprios(), wsys.return_defaultaffpriosStackables(), and wsys.return_defaultAffPrioIgnores(). Keeps from hitting the serverside setting cap.</li>
+        <li>Fixed: Adjusted Dor to queue as a free vs eqbal.</li>
+        <li>Reviewing: Still Working through Wundersys settings to match / move over to serverside settings for consistency sake.</li>
+    </ul>
+    <h1>2.1.4</h1>
+    <ul>
+        <li>Added: Resets for profiles being hung with old stuff to go along with serverside stuff.</li>
+        <li>Added: ^wconfig profile resetaffs? all(| confirm)?$</li>
+        <li>Added: ^wconfig profile resetaffs? (\w+) (\w+)$</li>
+        <li>Added: Autokeepup Shield Toggle - ^keepshield (on|off)$</li>
+        <li>Added: Implemented the new Internalbleeding into the Default Aff Priorities</li>
+        <li>Added: Added in spark and shaping counts for Fire and Earth Elemental Lords into prompt Tags</li>
+        <li>Added: Added a wsys doqueue reset function to clear out the doqueue if it gets stuck - wsys.doclear()</li>
+        <li>Added: Started ripping out old clientside affliction tracking.</li>
+        <li>Added: Added the Diagnose gate to rely on the GMCP affliction list now.</li>
+        <li>Added: Added in support for afflictions coming from GMCP that have numbers with them.</li>
+        <li>Added: This should show on prompt or anything using wsys.aff. if the affliction has a number involved.</li>
+        <li>Fixed: Gagging of priority swaps with afflictions that have numbers in the name.</li>
+        <li>Reviewing: Class recognition triggers. There are a lot missing here.</li>
+        <li>Reviewing: Looking over symptom triggers to see what can be better fixed up.</li>
+        <li>Reviewing: Clientside affliction gained and lost triggers. These should generally match GMCP now as long as they're not hidden. That being the case they will be removed as I go through them.</li>
+        <li>Reviewing: Started Looking over the priority swaps.</li>
+    </ul>
+    <h1>2.1.3</h1>
+    <ul>
+        <li>Added: Better defense notifications on what defenses are active in wshow defup / keepup and under the "defs" alias list what uses mana.</li>
+    </ul>
+    <h1>2.1.2</h1>
+    <ul>
+        <li>Added: A setter from wconfig to serverside curing for configuration items: wconfig mosshealth / mossmana and wconfig siphealth / sipmana so you only have to set in one spot.</li>
+        <li>Added: A sip reset when logging in.</li>
+        <li>Fixed: The touch shield alias now clears dor queue and queues touch shield.</li>
+        <li>Fixed: Split wsys.return_defaultaffprios() and wsys.return_defaultAffPrioIgnores() out so they can be used in conjunction for a full reset. There are only so many characters that can be done in curing priority settings and I found that limit.</li>
+        <li>Fixed: Checks for updates. This now will give you back the box and a way to check for updates with the alias "wupdatecheck".</li>
+        <li>Fixed: Adjusted the forced mosshealth and mossmana down. This is inline with the installation instructions.</li>
+    </ul>
+    <h1>2.1.1</h1>
+    <ul>
+        <li>Added: Alias wupdatedefaffprio to forcefully copy any updates to the wsys.return_defaultaffprios() script.</li>
+        <li>Fixed: Dor was not behaving as wanted. Corrected this.</li>
+        <li>Updated: Added all of the afflictions into the wsys.return_defaultaffprios() to catch for anything that may come from other systems. This will move things that should be ignored to the 26 position.</li>
+    </ul>
+    <h1>2.1</h1>
+    <ul>
+        <li>Many changes - this is mostly to get updates that I was missing from around version 1.2/1.3.</li>
+        <li>Added: Additional Prompt Values added in. Reference the documentation for these details and the entire list of tags.</li>
+        <li>Added: Tracking and handling for many new afflictions that came out with new classes and elemental lord forms.</li>
+        <li>Added: Defense handling for new classes and elemental lord forms.</li>
+        <li>Added: Lust allow list configuration.</li>
+        <li>Added: Elemental Lord Support with profiles and Defenses.</li>
+        <li>Changed: Instead of going the route of Wundersys Foundation this was pulled back into one .mpackage file for simplicity.</li>
+        <li>Changed: Added in batch priority updates to fall in line with changes from Announce #5450. These generally work, but will fall behind if too much is going on. Be warned.</li>
+        <li>Updated: Defenses for the Knight class split offs. These should generally be handled now.</li>
+        <li>Updated: Default priorities have been reviewed and updated based around some current systems and what has been added over time.</li>
+        <li>Fixed: Prompt2 now works correctly and can be set.</li>
+        <li>Fixed: There have been issues with some profile settings not saving consistently. This has been tracked down and fixed.</li>
+    </ul>
 			<h1>2.1.5</h1>
 			<ul class="changeLogList">
 			    <li>Added: New Setting to match Serverside - fracturecurepercent</li>
@@ -55,7 +191,7 @@
 			</ul>
 			<h1>2.1.4</h1>
 			<ul class="changeLogList">
-			    <li>Added: Resets for profiles being hung with old stuff to go along with serverside stuff.</li>>
+			    <li>Added: Resets for profiles being hung with old stuff to go along with serverside stuff.</li>
 			    <li>Added: ^wconfig profile resetaffs? all(| confirm)?$</li>
 			    <li>Added: ^wconfig profile resetaffs? (\w+) (\w+)$</li>
 			    <li>Added: Autokeepup Shield Toggle - ^keepshield (on|off)$</li>
