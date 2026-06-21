@@ -15,14 +15,14 @@
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-								<a href="index.html">
-								  <div class="heroLogo title">
-								    <i class="lCircle"></i>
-								    <i class="sCircle"></i>
-								    <i class="mCircle"></i>
-								    <h2>WunderSys</h2>
-								  </div>
-								</a>
+                <a href="index.html">
+                    <div class="heroLogo title">
+                    <i class="lCircle"></i>
+                    <i class="sCircle"></i>
+                    <i class="mCircle"></i>
+                    <h2>WunderSys</h2>
+                    </div>
+                </a>
                 <nav>
                     <ul>
 					<li><a href="https://github.com/Wundersys-Mudlet/WunderSys/releases/" target="_blank">Download</a></li>
@@ -40,7 +40,7 @@
                         <h1>Documentation.</h1>
                         <p>All of the Aliases and Functions for WunderSys.</p>
                     </header>
-		   							<br/>
+                    <br/>
                     <section>
                         <h2>System Aliases</h2>
                             <table class="list">
@@ -65,7 +65,19 @@
                                     <td><b>wconfig {setting} {value}</b></td>
                                     <td>Set a setting to a certain value.</td>
                                 </tr>
-																<tr class="list">
+                                <tr class="list">
+                                    <td><b>wconfig precache {herb|mineral name} {number}</b></td>
+                                    <td>Set set the precache value for a mineral or herb.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig affprio {affliction} {number position 1 - 26}</b></td>
+                                    <td>Set set the affliction priority value for an affliction. This is based on class / profile be warned.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wconfig defprio {defense} {number position 1 - 26}</b></td>
+                                    <td>Set set the defense priority value for an defense. This is based on class / profile be warned.</td>
+                                </tr>
+								<tr class="list">
                                     <td><b>wconfig lustlist {add|remove|clear} {name}</b></td>
                                     <td>Configure the lust allowlist with a name. Can add or remove a name, or clear the whole list.</td>
                                 </tr>
@@ -73,11 +85,15 @@
                                     <td><b>wsystem restore default</b></td>
                                     <td>Restore default settings in the system. Be careful, this deletes all saved settings.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>wupdatedefaffprio</b></td>
                                     <td>Apply updates to the wsys.return_defaultaffprios() script to your default affliction priorities on serverside.<br/> You will want to run this in conjunction with <b>wconfig profile resetaffs all confirm</b> if updating default affs to update both serverside and wundersys profile settings afflictions. </td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
+                                    <td><b>prioreset</b></td>
+                                    <td>Resets serverside affliction priority list with currently set profile proiorities.</td>
+                                </tr>
+								<tr class="list">
                                     <td><b>wupdatecheck</b></td>
                                     <td>Checks if on the current version.</td>
                                 </tr>
@@ -94,7 +110,7 @@
                                     <td>Diagnoses afflictions.</td>
                                 </tr>
                                 <tr class="list">
-                                    <td><b>df / def</b></td>
+                                    <td><b>df / defs</b></td>
                                     <td>Checks defences.</td>
                                 </tr>
                                 <tr class="list">
@@ -121,11 +137,11 @@
                                     <td><b>keepshield {on|off}</b></td>
                                     <td>Toggles shield upkeep.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>sl</b></td>
                                     <td>Toggles turns lyre mode on.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>slo</b></td>
                                     <td>Toggles turns lyre mode off.</td>
                                 </tr>
@@ -154,6 +170,10 @@
                                     <td>Toggles auto picking up gold, shards, and bodies.</td>
                                 </tr>
                                 <tr class="list">
+                                    <td><b>plist</b></td>
+                                    <td>Updates pipe smoke tracking. Handy after arenas.</td>
+                                </tr>
+                                <tr class="list">
                                     <td><b>inra</b></td>
                                     <td>Inrifts all riftable items in your inventory.</td>
                                 </tr>
@@ -164,7 +184,7 @@
                             </tbody>
                         </table>
                     </section>
-		    						<br/>		
+                    <br/>		
                     <section>
                         <h2>Manual Curing Aliases</h2>
                         <table class="list">
@@ -173,7 +193,7 @@
                                     <td><b>cvp</b></td>
                                     <td>Manual panick alias to try to get out of locks.</td>
                                 </tr>
-                             		<tr class="list">
+                                <tr class="list">
                                     <td><b>ch</b></td>
                                     <td>Manual class heal alias to use active cure based on class / race.</td>
                                 </tr>
@@ -222,6 +242,10 @@
                                     <td>Manually applies restoration to arms/legs/head/torso.</td>
                                 </tr>
                                 <tr class="list">
+                                    <td><b>am(a|l|h|t)</b></td>
+                                    <td>Manually applies mending to arms/legs/head/torso.</td>
+                                </tr>
+                                <tr class="list">
                                     <td><b>ac</b></td>
                                     <td>Manually tells serverside to apply caloric on salve balance.</td>
                                 </tr>
@@ -232,6 +256,10 @@
                                 <tr class="list">
                                     <td><b>p(rl|ll|ra|la|t|h)</b></td>
                                     <td>Parry rightleg/leftleg/rightarm/ leftarm/torso/head on balance.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>av (arc|arcane|aoe|area|phy|physical|men|mental)</b></td>
+                                    <td>Set avoidance (arcane, aoe, physical, mental) on balance.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>stand</b></td>
@@ -264,7 +292,7 @@
                             </tbody>
                         </table>
                     </section>
-		   							<br/>
+                    <br/>
                     <section>
                         <h2>Profile Management</h2>
                         <table class="list">
@@ -289,11 +317,11 @@
                                     <td><b>wconfig profile copyclass {source_class}</b></td>
                                     <td>Copy the settings from one class to your current class.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>wconfig profile resetaffs all{| confirm}</b></td>
-																		<td>Resets affliction priorities tied to ALL profiles to what is set in functions <b>wsys.return_defaultaffprios()</b> and <b>wsys.return_defaultaffpriosStackables()</b>. This helps if things get tangled up.</td>
+									<td>Resets affliction priorities tied to ALL profiles to what is set in functions <b>wsys.return_defaultaffprios()</b> and <b>wsys.return_defaultaffpriosStackables()</b>. This helps if things get tangled up.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>wconfig profile resetaffs {\w+} {\w+}</b></td>
                                     <td>Resets affliction priorities tied to a profile to what is set in functions <b>wsys.return_defaultaffprios()</b> and <b>wsys.return_defaultaffpriosStackables()</b>. This helps if things get tangled up.</td>
                                 </tr>
@@ -311,10 +339,10 @@
                             </tbody>
                         </table>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h2>Do, Dofree and Dorepeat Aliases</h2>
-												<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is due to the use of Achaea's serverside aliases. <b>HELP ALIASES</b> can provide more information. This is NOT tied to the config command separator in Achaea. </p>
+						<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is due to the use of Achaea's serverside aliases. <b>HELP ALIASES</b> can provide more information. This is NOT tied to the config command separator in Achaea. </p>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
@@ -336,14 +364,14 @@
                             </tbody>
                         </table>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <header>
                         <h2>Functions</h2>
-												<p>Note: Wundersys uses the wsys. namespace.</p>
+						<p>Note: Wundersys uses the wsys. namespace.</p>
                         </header>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h3>Pausing</h3>
                         <table>
@@ -375,7 +403,7 @@
                             </tbody>
                         </table>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h3>Sending Commands</h3>
                         <table class="list">
@@ -391,7 +419,7 @@
                             </tbody>
                         </table>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h3>Status Checks</h3>
                         <table class="list">
@@ -433,16 +461,36 @@
                                     <td>Returns the alchemic cure for a herbal if settings.useTransmutation is true. Otherwise it returns the herbal. For example wsys.curative_elist("kelp") would return "aurum" if wsys.settings.useTransmutation is true.</td>
                                 </tr>
                                 <tr class="list">
+                                    <td><b>wsys.checkRiftForItem("item")</b></td>
+                                    <td>Returns a number for an item that would be in the rift. Exact value only. For example wsys.checkRiftForItem("kelp") would return a number.</td>
+                                </tr>
+                                <tr class="list">
                                     <td><b>wsys.isDragon()</b></td>
                                     <td>Returns true if you're in Dragonform. Otherwise it returns false.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>wsys.isElementalLord()</b></td>
                                     <td>Returns true if you're in Elemental Lord form. Otherwise it returns false.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.isClass("class")</b></td>
                                     <td>Returns true if you're in that "class" and not in Dragonform. Otherwise it returns false. For example wsys.isClass("monk") returns true if you're a monk and not dragonformed.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.knightSpec()</b></td>
+                                    <td>Returns the knight specialisation or "none" if not a knight.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.monkPath()</b></td>
+                                    <td>Returns the monk path or "none" if not a monk.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.alchemistField()</b></td>
+                                    <td>Returns the alchemist field or "none" if not an alchemist.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.myMorph()</b></td>
+                                    <td>Returns the current morph or "none" if not in sentinel or druid.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>wsys.isFitnessClass()</b></td>
@@ -452,13 +500,17 @@
                                     <td><b>wsys.myPing()</b></td>
                                     <td>Returns an average of the last 10 getNetworkLatency() values. More useful for tempTimers than a simple getNetworkLatency() since that can spike up and down a little.</td>
                                 </tr>
+                                <tr class="list">
+                                    <td><b>wsys.amInChannel(channel)</b></td>
+                                    <td>Returns if you are in the passed in channel "Example: wsys.amInChannel("Party")".</td>
+                                </tr>
                             </tbody>
                         </table>
                     </section>
-		   							<br/>
+                    <br/>
                     <section>
                         <h3>Do, Dofree and Dorepeat</h3>
-												<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is NOT tied to the serverside separator in Achaea.</p>
+						<p>Note: The command separator for these aliases must be <b>/</b> if using multiple commands. This is NOT tied to the serverside separator in Achaea.</p>
                         <table class="list">
                             <tbody>
                                 <tr class="list">
@@ -493,14 +545,14 @@
                                     <td><b>wsys.dorclear()</b></td>
                                     <td>Clears the doreapeat action. This displays a dor cleared message.</td>
                                 </tr>
-																<tr class="list">
+								<tr class="list">
                                     <td><b>wsys.dorclearQuiet()</b></td>
                                     <td>Clears the doreapeat action. This will not display a message it cleared.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h3>Defences</h3>
                         <table class="list">
@@ -520,18 +572,18 @@
                             </tbody>
                         </table>
                     </section>
-		    						<br/>
-		    						<section>
+                    <br/>
+                    <section>
                         <h2>Customizing Default Affliction Priorities</h2>
                         <p>You can take a peek at the default Affliction Priorities if you look at the 'Affliction Priority Settings' script in the SETTINGS folder.</p>
                         <p>If you wish to mess about with the order I suggest moving that script outside and below the WunderSys script folder (below would be good to load after Wundersys). That way you won't lose your customized default affliction priority settings when you update Wundersys.</p>
                         <p>The script contains three functions <b>wsys.return_defaultaffprios()</b>, <b>wsys.return_defaultaffpriosStackables()</b> and <b>wsys.return_defaultAffPrioIgnores()</b>. Edit the priorities in <b>wsys.return_defaultaffprios()</b> and save the script.</p> 
 						<p>Next you will want to run the aliases:
-						  <ul>
-							<li><b>wupdatedefaffprio</b> - this updates the priorities on the wundersys and wundersys_default curingset priorities. You can also run the function <b>wsys.updateDefaultAffPrios()</b> but the alias should be sufficient.</li>
-							<li><b>wconfig profile resetaffs all confirm</b> - This will update all of the affliction settings in each profile in wundersys_settings.lua. Can run without "confirm" to get a glance on what is going to change first.</li>
-						  </ul>
-						</p>
+                            <ul>
+                                <li><b>wupdatedefaffprio</b> - this updates the priorities on the wundersys and wundersys_default curingset priorities. You can also run the function <b>wsys.updateDefaultAffPrios()</b> but the alias should be sufficient.</li>
+                                <li><b>wconfig profile resetaffs all confirm</b> - This will update all of the affliction settings in each profile in wundersys_settings.lua. Can run without "confirm" to get a glance on what is going to change first.</li>
+                            </ul>
+                        </p>
                         <p>Like serverside curing the afflictions with the highest priority (1 through 25) are cured first. The first slot is left empty so that on the fly priority switching can prioritise certain afflictions in different situations. 26 will ignore an affliction or use "reset" to remove it.</p>
 						<p>To set an affliction priority based on your current class use the alias <b>wconfig affprio (\w+) (\d+)</b>. You can also use alias <b>wshow affprio all</b> to set by clicks and see what is currently setup.</p>
                         <h2>Customizing Affliction Priority Swaps</h2>
@@ -598,7 +650,35 @@
                         - Have fun editing!<br>
                         </p>
                     </section>
-		    		<br/>
+                    <br/>
+                    <section>
+                        <h2>Displays</h2>
+                        <table class="list">
+                            <tbody>
+                                <tr class="list">
+                                    <td><b>wsys.rainbow(str, type, freq)</b></td>
+                                    <td>Makes a pretty rainbow out of the string passed in. Needs to be used with hecho. Example: hecho(wsys.rainbow("Hello World!")).</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.boxDisplay(msg, color)</b></td>
+                                    <td>Box Display style that was stolen from old SVO with a double note in the box.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.boxDisplaySmall(msg, color)</b></td>
+                                    <td>Box Display style that was stolen from old SVO with single note in the box.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.boxDisplayRainbow(msg, color)</b></td>
+                                    <td>Rainbow Box Display style that was stolen from old SVO with single note in the box.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>wsys.boxDisplaySmallRainbow(msg, color)</b></td>
+                                    <td>Rainbow Box Display style that was stolen from old SVO with single note in the box.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <br/>
                     <section>
                         <h2>Custom Prompt</h2>
                         <p>The custom prompt string is saved in the settings.prompt variable. You can see the current prompt string by checking <b>wshow display</b>. If you click on the prompt string (which is horribly long by default) it will be pasted into your input line so you can edit it.</p>
@@ -606,10 +686,10 @@
 						<p>There is a secondary prompt that can be configured with <b>wconfig promptline2 {promptstring}</b> as well or false to disable.</p>
 						<p>There is a tertiary prompt that can be configured with <b>wconfig promptline3 {promptstring}</b> as well or false to disable.</p>
                     </section>
-		    						<br/>
+					<br/>
                     <section>
                         <h2>Prompt Tags:</h2>
-												<h4>More are being added over time as I work on this!</h4>
+						<h4>More are being added over time as I work on this!</h4>
                         <ul class="promptList">
                             <li><b>@health</b>: current health.</li>
                             <li><b>@percenthealth</b>: current health in percent.</li>
@@ -622,8 +702,8 @@
                             <li><b>@bal</b>: shows X for balance, default prompt uses @bal@bal</li>
                             <li><b>@eq</b>: shows E for equilibrium, defailt prompt uses @eq@eq</li>
                             <li><b>@target</b>: echos contents of the 'target' variable.</li>
-			    									<li><b>@exits</b>: Displays room exits short name.</li>
-			    									<li><b>@exitsfull</b>: Displays room exits long name.</li>
+                            <li><b>@exits</b>: Displays room exits short name.</li>
+                            <li><b>@exitsfull</b>: Displays room exits long name.</li>
                             <li><b>@paused</b>: shows (PP) if paused.</li>
                             <li><b>@softpaused</b>: shows (sP) if softpaused.</li>
                             <li><b>@phase</b>: shows "@" if phased, blackwinded or astralformed.</li>
@@ -638,7 +718,7 @@
                             <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up.</li>
                             <li><b>@warning</b>: shows the warnings (behead, breathrain etc.).</li>
                             <li><b>@affs</b>: displays the prompt aff tags.</li>
-			    									<li><b>@slc</b>: Self Limb Counter Display.</li>
+							<li><b>@slc</b>: Self Limb Counter Display.</li>
                             <li><b>@xp</b>: shows current % experience into the next level.</li>
                             <li><b>@npchp</b>: shows current NPC health percent if targetting an NPC.</li>
                             <li><b>@rage</b>: shows current battlerage.</li>
@@ -668,12 +748,14 @@
                             <li><b>@empower</b>: returns current empower. (runewarden)</li>
                             <li><b>@venom</b>: returns current venom. (serpent)</li>
                             <li><b>@spirits</b>: returns current spirits. (shaman)</li>
-			    									<li><b>@spark</b>: returns current spark count. (fire elemental)</li>
-			    									<li><b>@shaping</b>: returns current shaping count. (earth elemental)</li>
-													  <li><b>@myping</b>: returns average of last 10 network pings.</li>
+                            <li><b>@spark</b>: returns current spark count. (fire elemental)</li>
+                            <li><b>@shaping</b>: returns current shaping count. (earth elemental)</li>
+                            <li><b>@momentum</b>: returns current momentum. (dual blunt spec)</li>
+                            <li><b>@ferocity</b>: returns current momentum. (sword and board spec)</li>
+                            <li><b>@myping</b>: returns average of last 10 network pings.</li>
                         </ul>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h2>Prompt Color Tags:</h2>
                         <ul class="promptList">
@@ -684,12 +766,12 @@
                             <li><b>#(colour)</b>: any color you can find in mudlet as long as it has no _ in it, so SlateGrey works, but not slate_grey. Might get that working in a future update.</li>
                         </ul>
                     </section>
-		    						<br/>
+                    <br/>
                     <section>
                         <h2>Custom Reporting Echoes</h2>
                         <p>You can overwrite and customize the wundersys.report() function and other reporting functions under the folder INTERNALS Highlights script by copying the function(s) outside of Wundersys (place it below Wundersys) then edit how you see fit.</p>
                     </section>
-		   							<br/>
+                    <br/>
                 </article>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
