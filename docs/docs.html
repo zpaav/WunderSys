@@ -106,6 +106,10 @@
                                     <td>Sends me (Fendo) a message in game with a bug you have found.</td>
                                 </tr>
                                 <tr class="list">
+                                    <td><b>wraid {on|off}</b></td>
+                                    <td>Toggles raid mode.</td>
+                                </tr>
+                                <tr class="list">
                                     <td><b>dv / diag</b></td>
                                     <td>Diagnoses afflictions.</td>
                                 </tr>
@@ -148,6 +152,14 @@
                                 <tr class="list">
                                     <td><b>hm</b></td>
                                     <td>Toggles health or mana priority.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>vault (thing)</b></td>
+                                    <td>Sets the mount for automounting. This does respect shortcuts as of Wundersys 2.4.1.</td>
+                                </tr>
+                                <tr class="list">
+                                    <td><b>va</b></td>
+                                    <td>Toggles automounting.</td>
                                 </tr>
                                 <tr class="list">
                                     <td><b>br</b></td>
@@ -504,6 +516,10 @@
                                     <td><b>wsys.amInChannel("Channel")</b></td>
                                     <td>Returns if you are in the passed in channel. Example: wsys.amInChannel("Party").</td>
                                 </tr>
+                                <tr class="list">
+                                    <td><b>wsys.isRaid()</b></td>
+                                    <td>Returns if raid mode is active.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </section>
@@ -717,6 +733,7 @@
                             <li><b>@def</b>: shows which defs are up. B (blindness), D (deafness), C (Cloak), K (kola), M (mass), br (breathing).</li>
                             <li><b>@invdef</b>: same as the @def tag, only it shows displays the def letters if they're not deffed up.</li>
                             <li><b>@warning</b>: shows the warnings (behead, breathrain etc.).</li>
+                            <li><b>@raid</b>: shows if raid mode is active.</li>
                             <li><b>@affs</b>: displays the prompt aff tags.</li>
 							<li><b>@slc</b>: Self Limb Counter Display.</li>
                             <li><b>@xp</b>: shows current % experience into the next level.</li>
