@@ -17,11 +17,12 @@ https://wundersys-mudlet.github.io/WunderSys/
 #### Additional Helper Scripts located here:
 - FoxHunt - Wundersys and Orion Hunting Script.
 - NDB - Named Database. Uses "endeeb." as the namespace.
-- KaiAchGui - Just a gui that works with Wundersys. Very static.
+- KaiAchGui - Just a gui that works with Wundersys. Very static, but responsive to screens.
 - AK8.6.X - Slightly updated affliction tracking package that was taken from the AK8.6 by Austere located [here](https://www.dropbox.com/scl/fo/04ci9tq4rivks1r4oar37/ABxzEVpvvrBvjv9V4IYc2s0?rlkey=kyu53u5f96w5ra05xkkvujd3d&e=2&dl=0).
 - Limb1.X - Updated Limb Counter. Simple. Original limb counter repo [here](https://github.com/27theo/limb).
 - AugConjX.X - Augmentation and Conjuration Script.
 - TabTargettingX.X - A Script that uses the ` key to tab through denizens in the room using GMCP. Plays off the functionality in Nexus. 
+- BattleRageGUI - Battlerage display and toolkit that is updated from work done by Klendathu. Major difference with this version and the original is the removal of the animated timers and inclusion of all classes. Original repo is [here](https://github.com/PapaGuacamole/rageGUI).
 
 #### Other Scripts to Look to
 - Loki - Serpent Offense. Get it [here](https://github.com/Hikagejuunin/Loki)
